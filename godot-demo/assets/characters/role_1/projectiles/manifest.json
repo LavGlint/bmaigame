@@ -1,0 +1,438 @@
+{
+  "role": "claude",
+  "character": "Claude娘",
+  "png": "atlas.png",
+  "size": [
+    1254,
+    1254
+  ],
+  "sha256": "35e89e4473853d3c38d519510d2afa800690b3e2d63154ab51eef84566d3f6af",
+  "mode": "RGBA",
+  "filter": "nearest",
+  "source_pixels_modified": false,
+  "direction": "right (+X); rotate flight sprite for other directions",
+  "x_cuts": [
+    0,
+    313,
+    627,
+    940,
+    1254
+  ],
+  "y_cuts": [
+    0,
+    313,
+    627,
+    940,
+    1254
+  ],
+  "mechanic": {
+    "type": "ricochet_orb",
+    "initial_projectiles": 1,
+    "max_ricochets": 3,
+    "ricochet_targets": "configurable"
+  },
+  "logic": "发射一颗光弹，允许三次弹射。弹射发生时反射或重定向速度并减少剩余次数；第三次弹射后仍可飞行，下次不能再弹射。弹射对象及目标选择由玩法决定。",
+  "animations": {
+    "flight": {
+      "label": "符文光弹",
+      "row": 0,
+      "frame_count": 4,
+      "fps": 12,
+      "loop": true,
+      "recommended_display_width": 30,
+      "display_scale": 0.1102941,
+      "frames": [
+        {
+          "region": [
+            22,
+            93,
+            272,
+            161
+          ],
+          "anchor": [
+            158.0,
+            173.5
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "alpha_bounds_in_cell": [
+            25,
+            96,
+            291,
+            251
+          ]
+        },
+        {
+          "region": [
+            328,
+            93,
+            278,
+            161
+          ],
+          "anchor": [
+            467.0,
+            173.5
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "alpha_bounds_in_cell": [
+            18,
+            96,
+            290,
+            251
+          ]
+        },
+        {
+          "region": [
+            641,
+            92,
+            278,
+            162
+          ],
+          "anchor": [
+            780.0,
+            173.5
+          ],
+          "offset": [
+            0.0,
+            -0.5
+          ],
+          "alpha_bounds_in_cell": [
+            17,
+            95,
+            289,
+            251
+          ]
+        },
+        {
+          "region": [
+            957,
+            93,
+            275,
+            161
+          ],
+          "anchor": [
+            1095.0,
+            173.5
+          ],
+          "offset": [
+            -0.5,
+            0.0
+          ],
+          "alpha_bounds_in_cell": [
+            20,
+            96,
+            289,
+            251
+          ]
+        }
+      ],
+      "anchor_policy": "visible silhouette center"
+    },
+    "bounce": {
+      "label": "弹射闪光",
+      "row": 1,
+      "frame_count": 4,
+      "fps": 16,
+      "loop": false,
+      "recommended_display_width": 46,
+      "display_scale": 0.1614035,
+      "frames": [
+        {
+          "region": [
+            47,
+            366,
+            213,
+            219
+          ],
+          "anchor": [
+            153.0,
+            475.5
+          ],
+          "offset": [
+            0.5,
+            0.0
+          ],
+          "alpha_bounds_in_cell": [
+            50,
+            56,
+            257,
+            269
+          ]
+        },
+        {
+          "region": [
+            331,
+            357,
+            290,
+            246
+          ],
+          "anchor": [
+            475.5,
+            480.0
+          ],
+          "offset": [
+            0.5,
+            0.0
+          ],
+          "alpha_bounds_in_cell": [
+            21,
+            47,
+            305,
+            287
+          ]
+        },
+        {
+          "region": [
+            645,
+            348,
+            291,
+            252
+          ],
+          "anchor": [
+            790.5,
+            473.5
+          ],
+          "offset": [
+            0.0,
+            0.5
+          ],
+          "alpha_bounds_in_cell": [
+            21,
+            38,
+            306,
+            284
+          ]
+        },
+        {
+          "region": [
+            977,
+            358,
+            246,
+            228
+          ],
+          "anchor": [
+            1100.5,
+            472.0
+          ],
+          "offset": [
+            -0.5,
+            0.0
+          ],
+          "alpha_bounds_in_cell": [
+            40,
+            48,
+            280,
+            270
+          ]
+        }
+      ],
+      "anchor_policy": "visible silhouette center"
+    },
+    "impact": {
+      "label": "光弹消散",
+      "row": 2,
+      "frame_count": 4,
+      "fps": 16,
+      "loop": false,
+      "recommended_display_width": 52,
+      "display_scale": 0.1911765,
+      "frames": [
+        {
+          "region": [
+            35,
+            657,
+            267,
+            256
+          ],
+          "anchor": [
+            168.5,
+            785.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "alpha_bounds_in_cell": [
+            38,
+            33,
+            299,
+            283
+          ]
+        },
+        {
+          "region": [
+            341,
+            655,
+            278,
+            256
+          ],
+          "anchor": [
+            480.5,
+            783.0
+          ],
+          "offset": [
+            -0.5,
+            0.0
+          ],
+          "alpha_bounds_in_cell": [
+            31,
+            31,
+            303,
+            281
+          ]
+        },
+        {
+          "region": [
+            652,
+            656,
+            274,
+            258
+          ],
+          "anchor": [
+            788.5,
+            785.0
+          ],
+          "offset": [
+            0.5,
+            0.0
+          ],
+          "alpha_bounds_in_cell": [
+            28,
+            32,
+            296,
+            284
+          ]
+        },
+        {
+          "region": [
+            992,
+            681,
+            217,
+            208
+          ],
+          "anchor": [
+            1101.0,
+            785.5
+          ],
+          "offset": [
+            -0.5,
+            -0.5
+          ],
+          "alpha_bounds_in_cell": [
+            55,
+            57,
+            266,
+            259
+          ]
+        }
+      ],
+      "anchor_policy": "visible silhouette center"
+    },
+    "cast": {
+      "label": "魔法书释放光",
+      "row": 3,
+      "frame_count": 4,
+      "fps": 16,
+      "loop": false,
+      "recommended_display_width": 48,
+      "display_scale": 0.1764706,
+      "frames": [
+        {
+          "region": [
+            53,
+            958,
+            234,
+            230
+          ],
+          "anchor": [
+            170.0,
+            1073.5
+          ],
+          "offset": [
+            0.0,
+            -0.5
+          ],
+          "alpha_bounds_in_cell": [
+            56,
+            21,
+            284,
+            245
+          ]
+        },
+        {
+          "region": [
+            331,
+            945,
+            278,
+            252
+          ],
+          "anchor": [
+            470.0,
+            1071.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "alpha_bounds_in_cell": [
+            21,
+            8,
+            293,
+            254
+          ]
+        },
+        {
+          "region": [
+            649,
+            950,
+            276,
+            247
+          ],
+          "anchor": [
+            786.5,
+            1073.5
+          ],
+          "offset": [
+            0.5,
+            0.0
+          ],
+          "alpha_bounds_in_cell": [
+            25,
+            13,
+            295,
+            254
+          ]
+        },
+        {
+          "region": [
+            995,
+            986,
+            205,
+            180
+          ],
+          "anchor": [
+            1098.0,
+            1076.0
+          ],
+          "offset": [
+            -0.5,
+            0.0
+          ],
+          "alpha_bounds_in_cell": [
+            58,
+            49,
+            257,
+            223
+          ]
+        }
+      ],
+      "anchor_policy": "visible silhouette center"
+    }
+  },
+  "note": "Native generated high-resolution pixel-style art. Display size is configurable; not a native 32x32 sprite sheet. Collision and damage are game logic, not alpha bounds."
+}

@@ -1,0 +1,91 @@
+[gd_resource type="SpriteFrames" load_steps=18 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/characters/role_3/projectiles/atlas.png" id="1"]
+
+[sub_resource type="AtlasTexture" id="Atlas_0_0"]
+atlas = ExtResource("1")
+region = Rect2(31, 118, 254, 82)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Atlas_0_1"]
+atlas = ExtResource("1")
+region = Rect2(346, 118, 252, 81)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Atlas_0_2"]
+atlas = ExtResource("1")
+region = Rect2(661, 118, 250, 82)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Atlas_0_3"]
+atlas = ExtResource("1")
+region = Rect2(973, 118, 251, 82)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Atlas_1_0"]
+atlas = ExtResource("1")
+region = Rect2(40, 370, 254, 201)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Atlas_1_1"]
+atlas = ExtResource("1")
+region = Rect2(357, 401, 247, 140)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Atlas_1_2"]
+atlas = ExtResource("1")
+region = Rect2(659, 424, 240, 90)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Atlas_1_3"]
+atlas = ExtResource("1")
+region = Rect2(996, 450, 211, 60)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Atlas_2_0"]
+atlas = ExtResource("1")
+region = Rect2(54, 713, 204, 148)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Atlas_2_1"]
+atlas = ExtResource("1")
+region = Rect2(372, 648, 216, 259)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Atlas_2_2"]
+atlas = ExtResource("1")
+region = Rect2(666, 659, 257, 248)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Atlas_2_3"]
+atlas = ExtResource("1")
+region = Rect2(1011, 686, 192, 210)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Atlas_3_0"]
+atlas = ExtResource("1")
+region = Rect2(45, 993, 231, 212)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Atlas_3_1"]
+atlas = ExtResource("1")
+region = Rect2(373, 1003, 231, 196)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Atlas_3_2"]
+atlas = ExtResource("1")
+region = Rect2(667, 1013, 243, 170)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Atlas_3_3"]
+atlas = ExtResource("1")
+region = Rect2(1015, 1029, 200, 117)
+filter_clip = true
+
+[resource]
+animations = [
+{"frames": [{"duration": 1.0, "texture": SubResource("Atlas_0_0")}, {"duration": 1.0, "texture": SubResource("Atlas_0_1")}, {"duration": 1.0, "texture": SubResource("Atlas_0_2")}, {"duration": 1.0, "texture": SubResource("Atlas_0_3")}], "loop": true, "name": &"flight", "speed": 16.0},
+{"frames": [{"duration": 1.0, "texture": SubResource("Atlas_1_0")}, {"duration": 1.0, "texture": SubResource("Atlas_1_1")}, {"duration": 1.0, "texture": SubResource("Atlas_1_2")}, {"duration": 1.0, "texture": SubResource("Atlas_1_3")}], "loop": false, "name": &"muzzle", "speed": 20.0},
+{"frames": [{"duration": 1.0, "texture": SubResource("Atlas_2_0")}, {"duration": 1.0, "texture": SubResource("Atlas_2_1")}, {"duration": 1.0, "texture": SubResource("Atlas_2_2")}, {"duration": 1.0, "texture": SubResource("Atlas_2_3")}], "loop": false, "name": &"pierce", "speed": 16.0},
+{"frames": [{"duration": 1.0, "texture": SubResource("Atlas_3_0")}, {"duration": 1.0, "texture": SubResource("Atlas_3_1")}, {"duration": 1.0, "texture": SubResource("Atlas_3_2")}, {"duration": 1.0, "texture": SubResource("Atlas_3_3")}], "loop": false, "name": &"impact", "speed": 16.0}
+]

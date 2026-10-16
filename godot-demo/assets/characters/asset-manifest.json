@@ -1,0 +1,1214 @@
+[
+  {
+    "role": "GPT娘",
+    "slot": 0,
+    "source": "design\\role\\GPT娘\\pixel\\animations",
+    "clips": [
+      {
+        "name": "walk_down",
+        "frames": 15,
+        "fps": 15,
+        "loop": true
+      },
+      {
+        "name": "walk_up",
+        "frames": 15,
+        "fps": 15,
+        "loop": true
+      },
+      {
+        "name": "walk_left",
+        "frames": 15,
+        "fps": 15,
+        "loop": true
+      },
+      {
+        "name": "walk_right",
+        "frames": 15,
+        "fps": 15,
+        "loop": true
+      },
+      {
+        "name": "run_down",
+        "frames": 15,
+        "fps": 24,
+        "loop": true
+      },
+      {
+        "name": "run_up",
+        "frames": 15,
+        "fps": 24,
+        "loop": true
+      },
+      {
+        "name": "run_left",
+        "frames": 15,
+        "fps": 24,
+        "loop": true
+      },
+      {
+        "name": "run_right",
+        "frames": 15,
+        "fps": 24,
+        "loop": true
+      },
+      {
+        "name": "hurt_down",
+        "frames": 5,
+        "fps": 12,
+        "loop": false
+      },
+      {
+        "name": "hurt_up",
+        "frames": 5,
+        "fps": 12,
+        "loop": false
+      },
+      {
+        "name": "hurt_left",
+        "frames": 5,
+        "fps": 12,
+        "loop": false
+      },
+      {
+        "name": "hurt_right",
+        "frames": 5,
+        "fps": 12,
+        "loop": false
+      },
+      {
+        "name": "knockdown_down",
+        "frames": 11,
+        "fps": 14,
+        "loop": false
+      },
+      {
+        "name": "knockdown_up",
+        "frames": 11,
+        "fps": 14,
+        "loop": false
+      },
+      {
+        "name": "knockdown_left",
+        "frames": 11,
+        "fps": 14,
+        "loop": false
+      },
+      {
+        "name": "knockdown_right",
+        "frames": 11,
+        "fps": 14,
+        "loop": false
+      },
+      {
+        "name": "attack_down",
+        "frames": 5,
+        "fps": 10,
+        "loop": false
+      },
+      {
+        "name": "attack_up",
+        "frames": 5,
+        "fps": 10,
+        "loop": false
+      },
+      {
+        "name": "attack_left",
+        "frames": 5,
+        "fps": 10,
+        "loop": false
+      },
+      {
+        "name": "attack_right",
+        "frames": 5,
+        "fps": 10,
+        "loop": false
+      },
+      {
+        "name": "idle_down",
+        "frames": 11,
+        "fps": 8,
+        "loop": true
+      },
+      {
+        "name": "idle_up",
+        "frames": 11,
+        "fps": 8,
+        "loop": true
+      },
+      {
+        "name": "idle_left",
+        "frames": 11,
+        "fps": 8,
+        "loop": true
+      },
+      {
+        "name": "idle_right",
+        "frames": 11,
+        "fps": 8,
+        "loop": true
+      }
+    ],
+    "atlases": [
+      {
+        "name": "attack.png",
+        "sha256": "1f6c856fb06b84da02abea69a35290ffdef6f029d89411ea275b850e92c09c39"
+      },
+      {
+        "name": "hurt.png",
+        "sha256": "ffb38fbcb6edd12fa6700cb7d0fbbeb14b160025229500dccca94b758de136cb"
+      },
+      {
+        "name": "idle.png",
+        "sha256": "82cf5e06b8991d904126157571de3a4039b322d89a84768cc6070eb646038e5f"
+      },
+      {
+        "name": "knockdown.png",
+        "sha256": "c98f983aa2274d7a4784d6a9b0a1c557e7489f3d8e44e08448a52f116f8340ca"
+      },
+      {
+        "name": "run-2.png",
+        "sha256": "a83b908c469b6b13efccf9a8cd0b040c86c50353760260a964b7fb71b5290b2e"
+      },
+      {
+        "name": "run-3.png",
+        "sha256": "ccaaa77fc2ff81d229e40663af1a86a5089371cd825008bac4025afe453988a4"
+      },
+      {
+        "name": "run.png",
+        "sha256": "09eb55d6395e889fb35809e57f5b1855321f3b3f1c28ffc204c466a26c3de148"
+      },
+      {
+        "name": "walk-2.png",
+        "sha256": "b6c30dcbbae9d280498cb97cf992164bbdf04a9a56d6a0623f7e523ac3276956"
+      },
+      {
+        "name": "walk-3.png",
+        "sha256": "3bbc50a49058e409cedea64ebee40d378e061166881d065f662dff7d9990f240"
+      },
+      {
+        "name": "walk.png",
+        "sha256": "d43d2b37377f368bb2206fae709ca5e7ec90779558b69851b0ff8097cbecadae"
+      },
+      {
+        "name": "projectiles/atlas.png",
+        "sha256": "d83a52de88074e3017d1dfaff031ae018d3e012044cea0f6e8505456ee527195"
+      }
+    ],
+    "ownership_frames": 20,
+    "projectile_clips": 4,
+    "projectile_frames": 16
+  },
+  {
+    "role": "Claude娘",
+    "slot": 1,
+    "source": "design\\role\\Claude娘\\pixel\\animations",
+    "clips": [
+      {
+        "name": "walk_down",
+        "frames": 15,
+        "fps": 15,
+        "loop": true
+      },
+      {
+        "name": "walk_up",
+        "frames": 15,
+        "fps": 15,
+        "loop": true
+      },
+      {
+        "name": "walk_left",
+        "frames": 15,
+        "fps": 15,
+        "loop": true
+      },
+      {
+        "name": "walk_right",
+        "frames": 15,
+        "fps": 15,
+        "loop": true
+      },
+      {
+        "name": "run_down",
+        "frames": 15,
+        "fps": 24,
+        "loop": true
+      },
+      {
+        "name": "run_up",
+        "frames": 15,
+        "fps": 24,
+        "loop": true
+      },
+      {
+        "name": "run_left",
+        "frames": 15,
+        "fps": 24,
+        "loop": true
+      },
+      {
+        "name": "run_right",
+        "frames": 15,
+        "fps": 24,
+        "loop": true
+      },
+      {
+        "name": "hurt_down",
+        "frames": 5,
+        "fps": 12,
+        "loop": false
+      },
+      {
+        "name": "hurt_up",
+        "frames": 5,
+        "fps": 12,
+        "loop": false
+      },
+      {
+        "name": "hurt_left",
+        "frames": 5,
+        "fps": 12,
+        "loop": false
+      },
+      {
+        "name": "hurt_right",
+        "frames": 5,
+        "fps": 12,
+        "loop": false
+      },
+      {
+        "name": "knockdown_down",
+        "frames": 11,
+        "fps": 14,
+        "loop": false
+      },
+      {
+        "name": "knockdown_up",
+        "frames": 11,
+        "fps": 14,
+        "loop": false
+      },
+      {
+        "name": "knockdown_left",
+        "frames": 11,
+        "fps": 14,
+        "loop": false
+      },
+      {
+        "name": "knockdown_right",
+        "frames": 11,
+        "fps": 14,
+        "loop": false
+      },
+      {
+        "name": "attack_down",
+        "frames": 5,
+        "fps": 10,
+        "loop": false
+      },
+      {
+        "name": "attack_up",
+        "frames": 5,
+        "fps": 10,
+        "loop": false
+      },
+      {
+        "name": "attack_left",
+        "frames": 5,
+        "fps": 10,
+        "loop": false
+      },
+      {
+        "name": "attack_right",
+        "frames": 5,
+        "fps": 10,
+        "loop": false
+      },
+      {
+        "name": "idle_down",
+        "frames": 11,
+        "fps": 8,
+        "loop": true
+      },
+      {
+        "name": "idle_up",
+        "frames": 11,
+        "fps": 8,
+        "loop": true
+      },
+      {
+        "name": "idle_left",
+        "frames": 11,
+        "fps": 8,
+        "loop": true
+      },
+      {
+        "name": "idle_right",
+        "frames": 11,
+        "fps": 8,
+        "loop": true
+      }
+    ],
+    "atlases": [
+      {
+        "name": "attack.png",
+        "sha256": "712c6605fe2779cac49e1e2ecea6e9c44f397cf27c6d0007df95f971addd256a"
+      },
+      {
+        "name": "hurt.png",
+        "sha256": "b03949887672fb672c967603aa1005cd5cb81f74c5e3ac00c9a373f6cee9efcc"
+      },
+      {
+        "name": "idle.png",
+        "sha256": "f19b75d5c42625787d088136eb9c3356bb4b3e7e88b7b1cc6ef6c56f8e21bea5"
+      },
+      {
+        "name": "knockdown-transition.png",
+        "sha256": "67b369d3c10019a48e52417cce69b3409211a02cb6d0531e2b59a8ffcf15d6c6"
+      },
+      {
+        "name": "knockdown.png",
+        "sha256": "dab92913649e164804b06915ee47a57cddb9ac0cb7974c5de30deb75a8977a17"
+      },
+      {
+        "name": "run-2.png",
+        "sha256": "a663319e1ffdb1665566f437aa5e8fda813bcb5f7f90ffe2e42830f7a382ebc3"
+      },
+      {
+        "name": "run-3.png",
+        "sha256": "9f73efb2c587930ca008a5ff33de8e2b7f9b43e9afb8b4de6f819d79664815a0"
+      },
+      {
+        "name": "run.png",
+        "sha256": "3ca55d7708da9303cf9a9090de5f053d328379c68e2c7d0a5ff204754009e945"
+      },
+      {
+        "name": "walk-2.png",
+        "sha256": "9d7c60bd96d8a5745efc13ac57b86a539fbe7638e0a21ceb9e3cdaac35babbf6"
+      },
+      {
+        "name": "walk-3.png",
+        "sha256": "868e04b2c181352d54d813570a98e03f0a0583f887bb0a2e214dab071ce3f4b2"
+      },
+      {
+        "name": "walk.png",
+        "sha256": "91a3f133458d73f457d305db159e97d5d668f8fa896f3339c092e8292bf7b43a"
+      },
+      {
+        "name": "projectiles/atlas.png",
+        "sha256": "35e89e4473853d3c38d519510d2afa800690b3e2d63154ab51eef84566d3f6af"
+      }
+    ],
+    "ownership_frames": 20,
+    "projectile_clips": 4,
+    "projectile_frames": 16
+  },
+  {
+    "role": "DeepSeek娘",
+    "slot": 2,
+    "source": "design\\role\\DeepSeek娘\\pixel\\animations",
+    "clips": [
+      {
+        "name": "walk_down",
+        "frames": 15,
+        "fps": 15,
+        "loop": true
+      },
+      {
+        "name": "walk_up",
+        "frames": 15,
+        "fps": 15,
+        "loop": true
+      },
+      {
+        "name": "walk_left",
+        "frames": 15,
+        "fps": 15,
+        "loop": true
+      },
+      {
+        "name": "walk_right",
+        "frames": 15,
+        "fps": 15,
+        "loop": true
+      },
+      {
+        "name": "run_down",
+        "frames": 15,
+        "fps": 24,
+        "loop": true
+      },
+      {
+        "name": "run_up",
+        "frames": 15,
+        "fps": 24,
+        "loop": true
+      },
+      {
+        "name": "run_left",
+        "frames": 15,
+        "fps": 24,
+        "loop": true
+      },
+      {
+        "name": "run_right",
+        "frames": 15,
+        "fps": 24,
+        "loop": true
+      },
+      {
+        "name": "hurt_down",
+        "frames": 5,
+        "fps": 12,
+        "loop": false
+      },
+      {
+        "name": "hurt_up",
+        "frames": 5,
+        "fps": 12,
+        "loop": false
+      },
+      {
+        "name": "hurt_left",
+        "frames": 5,
+        "fps": 12,
+        "loop": false
+      },
+      {
+        "name": "hurt_right",
+        "frames": 5,
+        "fps": 12,
+        "loop": false
+      },
+      {
+        "name": "knockdown_down",
+        "frames": 11,
+        "fps": 14,
+        "loop": false
+      },
+      {
+        "name": "knockdown_up",
+        "frames": 11,
+        "fps": 14,
+        "loop": false
+      },
+      {
+        "name": "knockdown_left",
+        "frames": 11,
+        "fps": 14,
+        "loop": false
+      },
+      {
+        "name": "knockdown_right",
+        "frames": 11,
+        "fps": 14,
+        "loop": false
+      },
+      {
+        "name": "attack_down",
+        "frames": 5,
+        "fps": 10,
+        "loop": false
+      },
+      {
+        "name": "attack_up",
+        "frames": 5,
+        "fps": 10,
+        "loop": false
+      },
+      {
+        "name": "attack_left",
+        "frames": 5,
+        "fps": 10,
+        "loop": false
+      },
+      {
+        "name": "attack_right",
+        "frames": 5,
+        "fps": 10,
+        "loop": false
+      },
+      {
+        "name": "idle_down",
+        "frames": 11,
+        "fps": 8,
+        "loop": true
+      },
+      {
+        "name": "idle_up",
+        "frames": 11,
+        "fps": 8,
+        "loop": true
+      },
+      {
+        "name": "idle_left",
+        "frames": 11,
+        "fps": 8,
+        "loop": true
+      },
+      {
+        "name": "idle_right",
+        "frames": 11,
+        "fps": 8,
+        "loop": true
+      }
+    ],
+    "atlases": [
+      {
+        "name": "attack.png",
+        "sha256": "7e03448e013805f25a607b9382508b03831a280b4d16c491465cab9f01909244"
+      },
+      {
+        "name": "hurt.png",
+        "sha256": "0566a3a40f4acfa232354b415540d3e0aefbb7a2f6f5a3a194a91d372bd214ab"
+      },
+      {
+        "name": "idle.png",
+        "sha256": "e871fd62816ba4d8e1de1995dd7ebee016457fbc775cde622b7862f86cf97f05"
+      },
+      {
+        "name": "knockdown.png",
+        "sha256": "7e8bb0df2ae2981f5450b343b013908b16a5e2a04a95347d5b04f0c7c76b56c1"
+      },
+      {
+        "name": "run-2.png",
+        "sha256": "413ef4c580df2c9c60345ffa6fa9f0bb084c95732d67b149e0f76a14001a4403"
+      },
+      {
+        "name": "run-3.png",
+        "sha256": "5d73e5cc863fb7bcba62fee716550c6e0fb43243aa3aa84a467a2bc36338609f"
+      },
+      {
+        "name": "run.png",
+        "sha256": "b9e47799ee20fb1e27f3d68a419d879eb3d7bcffd1d4ba38ef6cc7f891b21fbf"
+      },
+      {
+        "name": "walk-2.png",
+        "sha256": "7035fcd50c8c834bf3f2b313ff727d56ef25e78012db5691a9f7d41b9dced874"
+      },
+      {
+        "name": "walk-3.png",
+        "sha256": "8d538e1aa6f8089027f7c02e919f6c032d5ce88db592324bc91b3fa03fa2d2c8"
+      },
+      {
+        "name": "walk.png",
+        "sha256": "4c2cd8b59e89c30bc4014acc44a89220879587484ea548826adab9c7aeba44a6"
+      },
+      {
+        "name": "projectiles/atlas.png",
+        "sha256": "747c20218229004e92e0e1053d4ca6813209d4664c94a0a7b2db574f386928c6"
+      }
+    ],
+    "ownership_frames": 20,
+    "projectile_clips": 4,
+    "projectile_frames": 16
+  },
+  {
+    "role": "Eve_aic",
+    "slot": 3,
+    "source": "design\\role\\Eve_aic\\pixel\\animations",
+    "clips": [
+      {
+        "name": "walk_down",
+        "frames": 15,
+        "fps": 15,
+        "loop": true
+      },
+      {
+        "name": "walk_up",
+        "frames": 15,
+        "fps": 15,
+        "loop": true
+      },
+      {
+        "name": "walk_left",
+        "frames": 15,
+        "fps": 15,
+        "loop": true
+      },
+      {
+        "name": "walk_right",
+        "frames": 15,
+        "fps": 15,
+        "loop": true
+      },
+      {
+        "name": "run_down",
+        "frames": 15,
+        "fps": 24,
+        "loop": true
+      },
+      {
+        "name": "run_up",
+        "frames": 15,
+        "fps": 24,
+        "loop": true
+      },
+      {
+        "name": "run_left",
+        "frames": 15,
+        "fps": 24,
+        "loop": true
+      },
+      {
+        "name": "run_right",
+        "frames": 15,
+        "fps": 24,
+        "loop": true
+      },
+      {
+        "name": "hurt_down",
+        "frames": 5,
+        "fps": 12,
+        "loop": false
+      },
+      {
+        "name": "hurt_up",
+        "frames": 5,
+        "fps": 12,
+        "loop": false
+      },
+      {
+        "name": "hurt_left",
+        "frames": 5,
+        "fps": 12,
+        "loop": false
+      },
+      {
+        "name": "hurt_right",
+        "frames": 5,
+        "fps": 12,
+        "loop": false
+      },
+      {
+        "name": "knockdown_down",
+        "frames": 11,
+        "fps": 14,
+        "loop": false
+      },
+      {
+        "name": "knockdown_up",
+        "frames": 11,
+        "fps": 14,
+        "loop": false
+      },
+      {
+        "name": "knockdown_left",
+        "frames": 11,
+        "fps": 14,
+        "loop": false
+      },
+      {
+        "name": "knockdown_right",
+        "frames": 11,
+        "fps": 14,
+        "loop": false
+      },
+      {
+        "name": "attack_down",
+        "frames": 5,
+        "fps": 10,
+        "loop": false
+      },
+      {
+        "name": "attack_up",
+        "frames": 5,
+        "fps": 10,
+        "loop": false
+      },
+      {
+        "name": "attack_left",
+        "frames": 5,
+        "fps": 10,
+        "loop": false
+      },
+      {
+        "name": "attack_right",
+        "frames": 5,
+        "fps": 10,
+        "loop": false
+      },
+      {
+        "name": "idle_down",
+        "frames": 11,
+        "fps": 8,
+        "loop": true
+      },
+      {
+        "name": "idle_up",
+        "frames": 11,
+        "fps": 8,
+        "loop": true
+      },
+      {
+        "name": "idle_left",
+        "frames": 11,
+        "fps": 8,
+        "loop": true
+      },
+      {
+        "name": "idle_right",
+        "frames": 11,
+        "fps": 8,
+        "loop": true
+      }
+    ],
+    "atlases": [
+      {
+        "name": "attack.png",
+        "sha256": "648805e30bfa78b63be0bfbe05d200966844a05375d531c5ea6ddf06cf520ebc"
+      },
+      {
+        "name": "hurt.png",
+        "sha256": "9dc4fff9c441837c3399a6baedc50ea251edc52d86fd4c53466398ffaaec973d"
+      },
+      {
+        "name": "idle.png",
+        "sha256": "42f82e669dec9af47b6d503a390da13586f94cf749f0c0b67d936f8229118989"
+      },
+      {
+        "name": "knockdown.png",
+        "sha256": "5d9542ac500bc9908ad599b72ba543b1b56cc92da88857536e0c820244592086"
+      },
+      {
+        "name": "run-2.png",
+        "sha256": "03d384083b2569793b651a5c25d047887ddac5783d752909dd8b7ec4cb3bfab0"
+      },
+      {
+        "name": "run-3.png",
+        "sha256": "04608e4e8d06bbd6e67d9237ecb00f23f7662fb1006456527cc12ab038b0fa46"
+      },
+      {
+        "name": "run.png",
+        "sha256": "543b587ae6903961c0d7cc89f3befd56b44ae2bd297889e7f509232475accb97"
+      },
+      {
+        "name": "walk-2.png",
+        "sha256": "e4a1a8c6d35bd96766d64069d25f02c5c1d32e733b6685890002327a9e60bca2"
+      },
+      {
+        "name": "walk-3.png",
+        "sha256": "fb44fe7dadbcbaa39d85333c19dfbb65ab52071ae8c25bfef76690d855dc7e4d"
+      },
+      {
+        "name": "walk.png",
+        "sha256": "2ec71db9c9e4bb9653baf42bace1282fbc8b39cf89eb949678699cbf2813a1a2"
+      },
+      {
+        "name": "projectiles/atlas.png",
+        "sha256": "174130d635ad85cc8c6f6a98881fb684a5390bea708038e95c0de608d81369db"
+      }
+    ],
+    "ownership_frames": 20,
+    "projectile_clips": 4,
+    "projectile_frames": 16
+  },
+  {
+    "role": "GLM娘",
+    "slot": 4,
+    "source": "design\\role\\GLM娘\\pixel\\animations",
+    "clips": [
+      {
+        "name": "walk_down",
+        "frames": 15,
+        "fps": 15,
+        "loop": true
+      },
+      {
+        "name": "walk_up",
+        "frames": 15,
+        "fps": 15,
+        "loop": true
+      },
+      {
+        "name": "walk_left",
+        "frames": 15,
+        "fps": 15,
+        "loop": true
+      },
+      {
+        "name": "walk_right",
+        "frames": 15,
+        "fps": 15,
+        "loop": true
+      },
+      {
+        "name": "run_down",
+        "frames": 15,
+        "fps": 24,
+        "loop": true
+      },
+      {
+        "name": "run_up",
+        "frames": 15,
+        "fps": 24,
+        "loop": true
+      },
+      {
+        "name": "run_left",
+        "frames": 15,
+        "fps": 24,
+        "loop": true
+      },
+      {
+        "name": "run_right",
+        "frames": 15,
+        "fps": 24,
+        "loop": true
+      },
+      {
+        "name": "hurt_down",
+        "frames": 5,
+        "fps": 12,
+        "loop": false
+      },
+      {
+        "name": "hurt_up",
+        "frames": 5,
+        "fps": 12,
+        "loop": false
+      },
+      {
+        "name": "hurt_left",
+        "frames": 5,
+        "fps": 12,
+        "loop": false
+      },
+      {
+        "name": "hurt_right",
+        "frames": 5,
+        "fps": 12,
+        "loop": false
+      },
+      {
+        "name": "knockdown_down",
+        "frames": 11,
+        "fps": 14,
+        "loop": false
+      },
+      {
+        "name": "knockdown_up",
+        "frames": 11,
+        "fps": 14,
+        "loop": false
+      },
+      {
+        "name": "knockdown_left",
+        "frames": 11,
+        "fps": 14,
+        "loop": false
+      },
+      {
+        "name": "knockdown_right",
+        "frames": 11,
+        "fps": 14,
+        "loop": false
+      },
+      {
+        "name": "attack_down",
+        "frames": 5,
+        "fps": 10,
+        "loop": false
+      },
+      {
+        "name": "attack_up",
+        "frames": 5,
+        "fps": 10,
+        "loop": false
+      },
+      {
+        "name": "attack_left",
+        "frames": 5,
+        "fps": 10,
+        "loop": false
+      },
+      {
+        "name": "attack_right",
+        "frames": 5,
+        "fps": 10,
+        "loop": false
+      },
+      {
+        "name": "idle_down",
+        "frames": 11,
+        "fps": 8,
+        "loop": true
+      },
+      {
+        "name": "idle_up",
+        "frames": 11,
+        "fps": 8,
+        "loop": true
+      },
+      {
+        "name": "idle_left",
+        "frames": 11,
+        "fps": 8,
+        "loop": true
+      },
+      {
+        "name": "idle_right",
+        "frames": 11,
+        "fps": 8,
+        "loop": true
+      }
+    ],
+    "atlases": [
+      {
+        "name": "attack.png",
+        "sha256": "9cabbb94a5f76202c131f25f671894e2fe288a529cdbb551534d8a1ed862aa1d"
+      },
+      {
+        "name": "hurt.png",
+        "sha256": "4f41b85bd2088e0a63dab832039cdb35b35375c98969782841b71e5fad9da50d"
+      },
+      {
+        "name": "idle.png",
+        "sha256": "587204d87ce2afc4314dfa4290cf4dc22d8d7daecb3342231a5fd0687ea21896"
+      },
+      {
+        "name": "knockdown-transition.png",
+        "sha256": "2d8b19b395a946cce07978de7376fa0c705f6697ae435ba6d4a220b7118f6f62"
+      },
+      {
+        "name": "knockdown.png",
+        "sha256": "5527853e48f253eb6c84fafcf37f77b059578b79b45adc6a3b041466e5f83a83"
+      },
+      {
+        "name": "run-2.png",
+        "sha256": "443278cfd243d35e50735f10b13c6cfef5480e6fbdf4122689358902cef11c08"
+      },
+      {
+        "name": "run-3.png",
+        "sha256": "62ab79550c9a29aa52a6825ea6b6fa976c17e5313927e2df8d68201a1831dd24"
+      },
+      {
+        "name": "run.png",
+        "sha256": "5380ad079e972aca727849af99c04bd2fb02567c615990f8ef3f8b7fd1c81f06"
+      },
+      {
+        "name": "walk-2.png",
+        "sha256": "464fe74a211b64ea9eec4f894cee6218362bed2d470c08e1708e72b5e196fb77"
+      },
+      {
+        "name": "walk-3.png",
+        "sha256": "1bda668d2b0a728a9fbc8124861574f7abde4b478d0f7bdd0ad3538d527073d6"
+      },
+      {
+        "name": "walk.png",
+        "sha256": "580181f089c986e84c8c0c0be82282b460c1ce810edf43e3efca427fdb96c0df"
+      },
+      {
+        "name": "projectiles/atlas.png",
+        "sha256": "d0b324e0723549a50ccf4adba4663474e2f5540c2fafac7fac24cd71bf7b5ce1"
+      }
+    ],
+    "ownership_frames": 20,
+    "projectile_clips": 4,
+    "projectile_frames": 16
+  },
+  {
+    "role": "酒狐",
+    "slot": 5,
+    "source": "design\\role\\酒狐\\pixel\\animations",
+    "clips": [
+      {
+        "name": "walk_down",
+        "frames": 15,
+        "fps": 15,
+        "loop": true
+      },
+      {
+        "name": "walk_up",
+        "frames": 15,
+        "fps": 15,
+        "loop": true
+      },
+      {
+        "name": "walk_left",
+        "frames": 15,
+        "fps": 15,
+        "loop": true
+      },
+      {
+        "name": "walk_right",
+        "frames": 15,
+        "fps": 15,
+        "loop": true
+      },
+      {
+        "name": "run_down",
+        "frames": 15,
+        "fps": 24,
+        "loop": true
+      },
+      {
+        "name": "run_up",
+        "frames": 15,
+        "fps": 24,
+        "loop": true
+      },
+      {
+        "name": "run_left",
+        "frames": 15,
+        "fps": 24,
+        "loop": true
+      },
+      {
+        "name": "run_right",
+        "frames": 15,
+        "fps": 24,
+        "loop": true
+      },
+      {
+        "name": "hurt_down",
+        "frames": 5,
+        "fps": 12,
+        "loop": false
+      },
+      {
+        "name": "hurt_up",
+        "frames": 5,
+        "fps": 12,
+        "loop": false
+      },
+      {
+        "name": "hurt_left",
+        "frames": 5,
+        "fps": 12,
+        "loop": false
+      },
+      {
+        "name": "hurt_right",
+        "frames": 5,
+        "fps": 12,
+        "loop": false
+      },
+      {
+        "name": "knockdown_down",
+        "frames": 11,
+        "fps": 14,
+        "loop": false
+      },
+      {
+        "name": "knockdown_up",
+        "frames": 11,
+        "fps": 14,
+        "loop": false
+      },
+      {
+        "name": "knockdown_left",
+        "frames": 11,
+        "fps": 14,
+        "loop": false
+      },
+      {
+        "name": "knockdown_right",
+        "frames": 11,
+        "fps": 14,
+        "loop": false
+      },
+      {
+        "name": "attack_down",
+        "frames": 5,
+        "fps": 10,
+        "loop": false
+      },
+      {
+        "name": "attack_up",
+        "frames": 5,
+        "fps": 10,
+        "loop": false
+      },
+      {
+        "name": "attack_left",
+        "frames": 5,
+        "fps": 10,
+        "loop": false
+      },
+      {
+        "name": "attack_right",
+        "frames": 5,
+        "fps": 10,
+        "loop": false
+      },
+      {
+        "name": "idle_down",
+        "frames": 11,
+        "fps": 8,
+        "loop": true
+      },
+      {
+        "name": "idle_up",
+        "frames": 11,
+        "fps": 8,
+        "loop": true
+      },
+      {
+        "name": "idle_left",
+        "frames": 11,
+        "fps": 8,
+        "loop": true
+      },
+      {
+        "name": "idle_right",
+        "frames": 11,
+        "fps": 8,
+        "loop": true
+      }
+    ],
+    "atlases": [
+      {
+        "name": "attack-recovery-left.png",
+        "sha256": "b33b0750b313a698f3c07a75d488e98236386497fb3d1cb0922ad305ca2708ea"
+      },
+      {
+        "name": "attack.png",
+        "sha256": "996da0d795342e9be3158dca70eaebe1c14c317314faf6aa7003a57a0e2203b1"
+      },
+      {
+        "name": "hurt.png",
+        "sha256": "40596a0073d53f2fef3d1f7508155ccb2a379e51fea82b0ba5eb9b43a23e5307"
+      },
+      {
+        "name": "idle.png",
+        "sha256": "abd2eb79bbac8c2a921bab700dc8f5b9d9056063864d9ad120c4ca4bc194708d"
+      },
+      {
+        "name": "knockdown.png",
+        "sha256": "33c6819e11578cb36f1f31c3b767b637ca516f88a4995c6e032221ac1a98232b"
+      },
+      {
+        "name": "run-2.png",
+        "sha256": "47d5174226d0edfa32548c5cacca81b7cf6bc4d41e4b2a66e8f4841cbc2e656a"
+      },
+      {
+        "name": "run-3.png",
+        "sha256": "1620f436b6d711448dff57c0f31afc47ca2e153bb3c9a1d33f9e174610b45a2c"
+      },
+      {
+        "name": "run.png",
+        "sha256": "19e3c74e5bdc0d387ed3b45321727cff32c608c6e46af85ac6ee893ec65b2ab7"
+      },
+      {
+        "name": "walk-2.png",
+        "sha256": "9995bbca4d3395aa17050f86efdd9fbc683e2d34d8b743ae94622b40fff7c256"
+      },
+      {
+        "name": "walk-3.png",
+        "sha256": "25a334a5c3b5d9e477528f20dae3872001e54de0db6b38e17ba7e1d9aefa138a"
+      },
+      {
+        "name": "walk.png",
+        "sha256": "351d38413094ced6efa7c30f6b4cc9ebd59cbe27d2ab8486f030f14d0f3f940f"
+      },
+      {
+        "name": "projectiles/atlas.png",
+        "sha256": "eec9cf55bdb1be0fedcf0f3603d9f552b38b14afd9db7efa5f75a0ed1938226a"
+      }
+    ],
+    "ownership_frames": 19,
+    "projectile_clips": 4,
+    "projectile_frames": 16
+  }
+]

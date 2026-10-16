@@ -1,0 +1,437 @@
+{
+  "role": "eve",
+  "character": "Eve_aic",
+  "png": "atlas.png",
+  "size": [
+    1254,
+    1254
+  ],
+  "sha256": "174130d635ad85cc8c6f6a98881fb684a5390bea708038e95c0de608d81369db",
+  "mode": "RGBA",
+  "filter": "nearest",
+  "source_pixels_modified": false,
+  "direction": "right (+X); rotate flight sprite for other directions",
+  "x_cuts": [
+    0,
+    313,
+    627,
+    940,
+    1254
+  ],
+  "y_cuts": [
+    0,
+    313,
+    627,
+    940,
+    1254
+  ],
+  "mechanic": {
+    "type": "obstacle_piercing",
+    "pierce_obstacles": true,
+    "pierce_enemies": "unspecified"
+  },
+  "logic": "狙击子弹穿透障碍物，穿墙时仅播放穿透波纹，不终止弹道。是否穿透敌人、射程和有效命中次数未指定。",
+  "animations": {
+    "flight": {
+      "label": "狙击子弹",
+      "row": 0,
+      "frame_count": 4,
+      "fps": 16,
+      "loop": true,
+      "recommended_display_width": 48,
+      "display_scale": 0.1935484,
+      "frames": [
+        {
+          "region": [
+            31,
+            118,
+            254,
+            82
+          ],
+          "anchor": [
+            157.0,
+            159.0
+          ],
+          "offset": [
+            1.0,
+            0.0
+          ],
+          "alpha_bounds_in_cell": [
+            34,
+            121,
+            282,
+            197
+          ]
+        },
+        {
+          "region": [
+            346,
+            118,
+            252,
+            81
+          ],
+          "anchor": [
+            472.5,
+            159.0
+          ],
+          "offset": [
+            -0.5,
+            -0.5
+          ],
+          "alpha_bounds_in_cell": [
+            36,
+            121,
+            282,
+            196
+          ]
+        },
+        {
+          "region": [
+            661,
+            118,
+            250,
+            82
+          ],
+          "anchor": [
+            786.0,
+            159.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "alpha_bounds_in_cell": [
+            37,
+            121,
+            281,
+            197
+          ]
+        },
+        {
+          "region": [
+            973,
+            118,
+            251,
+            82
+          ],
+          "anchor": [
+            1099.0,
+            159.0
+          ],
+          "offset": [
+            -0.5,
+            0.0
+          ],
+          "alpha_bounds_in_cell": [
+            36,
+            121,
+            281,
+            197
+          ]
+        }
+      ],
+      "anchor_policy": "visible silhouette center"
+    },
+    "muzzle": {
+      "label": "枪口闪光",
+      "row": 1,
+      "frame_count": 4,
+      "fps": 20,
+      "loop": false,
+      "recommended_display_width": 40,
+      "display_scale": 0.1612903,
+      "frames": [
+        {
+          "region": [
+            40,
+            370,
+            254,
+            201
+          ],
+          "anchor": [
+            167.0,
+            470.5
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "alpha_bounds_in_cell": [
+            43,
+            60,
+            291,
+            255
+          ]
+        },
+        {
+          "region": [
+            357,
+            401,
+            247,
+            140
+          ],
+          "anchor": [
+            480.5,
+            471.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "alpha_bounds_in_cell": [
+            47,
+            91,
+            288,
+            225
+          ]
+        },
+        {
+          "region": [
+            659,
+            424,
+            240,
+            90
+          ],
+          "anchor": [
+            779.0,
+            469.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "alpha_bounds_in_cell": [
+            35,
+            114,
+            269,
+            198
+          ]
+        },
+        {
+          "region": [
+            996,
+            450,
+            211,
+            60
+          ],
+          "anchor": [
+            1102.0,
+            479.5
+          ],
+          "offset": [
+            -0.5,
+            0.5
+          ],
+          "alpha_bounds_in_cell": [
+            59,
+            140,
+            264,
+            194
+          ]
+        }
+      ],
+      "anchor_policy": "visible silhouette center"
+    },
+    "pierce": {
+      "label": "穿透障碍波纹",
+      "row": 2,
+      "frame_count": 4,
+      "fps": 16,
+      "loop": false,
+      "recommended_display_width": 40,
+      "display_scale": 0.1593625,
+      "frames": [
+        {
+          "region": [
+            54,
+            713,
+            204,
+            148
+          ],
+          "anchor": [
+            156.0,
+            787.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "alpha_bounds_in_cell": [
+            57,
+            89,
+            255,
+            231
+          ]
+        },
+        {
+          "region": [
+            372,
+            648,
+            216,
+            259
+          ],
+          "anchor": [
+            480.0,
+            777.5
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "alpha_bounds_in_cell": [
+            62,
+            24,
+            272,
+            277
+          ]
+        },
+        {
+          "region": [
+            666,
+            659,
+            257,
+            248
+          ],
+          "anchor": [
+            794.0,
+            783.0
+          ],
+          "offset": [
+            0.5,
+            0.0
+          ],
+          "alpha_bounds_in_cell": [
+            42,
+            35,
+            293,
+            277
+          ]
+        },
+        {
+          "region": [
+            1011,
+            686,
+            192,
+            210
+          ],
+          "anchor": [
+            1107.0,
+            791.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "alpha_bounds_in_cell": [
+            74,
+            62,
+            260,
+            266
+          ]
+        }
+      ],
+      "anchor_policy": "visible silhouette center"
+    },
+    "impact": {
+      "label": "目标命中",
+      "row": 3,
+      "frame_count": 4,
+      "fps": 16,
+      "loop": false,
+      "recommended_display_width": 36,
+      "display_scale": 0.1518987,
+      "frames": [
+        {
+          "region": [
+            45,
+            993,
+            231,
+            212
+          ],
+          "anchor": [
+            160.5,
+            1099.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "alpha_bounds_in_cell": [
+            48,
+            56,
+            273,
+            262
+          ]
+        },
+        {
+          "region": [
+            373,
+            1003,
+            231,
+            196
+          ],
+          "anchor": [
+            488.5,
+            1101.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "alpha_bounds_in_cell": [
+            63,
+            66,
+            288,
+            256
+          ]
+        },
+        {
+          "region": [
+            667,
+            1013,
+            243,
+            170
+          ],
+          "anchor": [
+            788.0,
+            1098.0
+          ],
+          "offset": [
+            0.5,
+            0.0
+          ],
+          "alpha_bounds_in_cell": [
+            43,
+            76,
+            280,
+            240
+          ]
+        },
+        {
+          "region": [
+            1015,
+            1029,
+            200,
+            117
+          ],
+          "anchor": [
+            1115.5,
+            1087.5
+          ],
+          "offset": [
+            -0.5,
+            0.0
+          ],
+          "alpha_bounds_in_cell": [
+            78,
+            92,
+            272,
+            203
+          ]
+        }
+      ],
+      "anchor_policy": "visible silhouette center"
+    }
+  },
+  "note": "Native generated high-resolution pixel-style art. Display size is configurable; not a native 32x32 sprite sheet. Collision and damage are game logic, not alpha bounds."
+}

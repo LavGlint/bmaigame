@@ -1,0 +1,174 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://scripts/maps/map_asset.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/maps/industrial/map.png" id="2_map"]
+
+[sub_resource type="RectangleShape2D" id="Wall_0"]
+size = Vector2(1080.000000, 32.000000)
+
+[sub_resource type="RectangleShape2D" id="Wall_1"]
+size = Vector2(1080.000000, 32.000000)
+
+[sub_resource type="RectangleShape2D" id="Wall_2"]
+size = Vector2(32.000000, 654.000000)
+
+[sub_resource type="RectangleShape2D" id="Wall_3"]
+size = Vector2(32.000000, 654.000000)
+
+[node name="IndustrialMap" type="Node2D"]
+script = ExtResource("1_script")
+manifest_path = "res://assets/maps/industrial/manifest.json"
+
+[node name="Ground" type="Sprite2D" parent="."]
+z_index = -10
+texture_filter = 1
+texture = ExtResource("2_map")
+centered = false
+scale = Vector2(0.669856, 0.669856)
+
+[node name="World" type="Node2D" parent="."]
+y_sort_enabled = true
+
+[node name="Boundary" type="Node2D" parent="."]
+
+[node name="SpawnPoints" type="Node2D" parent="."]
+
+[node name="Cargo_NW" type="Node2D" parent="World"]
+position = Vector2(270.622010, 196.937799)
+
+[node name="Foreground" type="Polygon2D" parent="World/Cargo_NW"]
+texture_filter = 1
+texture = ExtResource("2_map")
+polygon = PackedVector2Array(-83.062201, -33.492823, -62.296651, -33.492823, -62.296651, -56.937799, -35.502392, -56.937799, -35.502392, -53.588517, 57.607656, -53.588517, 57.607656, -31.483254, 79.043062, -31.483254, 79.043062, 0.000000, -83.062201, 0.000000)
+uv = PackedVector2Array(280.000000, 244.000000, 311.000000, 244.000000, 311.000000, 209.000000, 351.000000, 209.000000, 351.000000, 214.000000, 490.000000, 214.000000, 490.000000, 247.000000, 522.000000, 247.000000, 522.000000, 294.000000, 280.000000, 294.000000)
+
+[node name="Body" type="StaticBody2D" parent="World/Cargo_NW"]
+collision_layer = 2
+collision_mask = 1
+
+[node name="Footprint" type="CollisionPolygon2D" parent="World/Cargo_NW/Body"]
+polygon = PackedVector2Array(-77.703349, -26.124402, 64.976077, -26.124402, 77.703349, -18.755981, 77.703349, 0.000000, -77.703349, 0.000000)
+
+[node name="Cargo_N" type="Node2D" parent="World"]
+position = Vector2(560.000000, 197.607656)
+
+[node name="Foreground" type="Polygon2D" parent="World/Cargo_N"]
+texture_filter = 1
+texture = ExtResource("2_map")
+polygon = PackedVector2Array(-72.344498, -33.492823, -57.607656, -33.492823, -57.607656, -54.928230, -14.066986, -54.928230, -14.066986, -58.947368, 12.057416, -58.947368, 12.057416, -44.210526, 51.578947, -44.210526, 51.578947, -30.813397, 69.665072, -30.813397, 69.665072, 0.000000, -72.344498, 0.000000)
+uv = PackedVector2Array(728.000000, 245.000000, 750.000000, 245.000000, 750.000000, 213.000000, 815.000000, 213.000000, 815.000000, 207.000000, 854.000000, 207.000000, 854.000000, 229.000000, 913.000000, 229.000000, 913.000000, 249.000000, 940.000000, 249.000000, 940.000000, 295.000000, 728.000000, 295.000000)
+
+[node name="Body" type="StaticBody2D" parent="World/Cargo_N"]
+collision_layer = 2
+collision_mask = 1
+
+[node name="Footprint" type="CollisionPolygon2D" parent="World/Cargo_N/Body"]
+polygon = PackedVector2Array(-67.655502, -26.794258, 56.937799, -26.794258, 67.655502, -20.095694, 67.655502, 0.000000, -67.655502, 0.000000)
+
+[node name="Cargo_NE" type="Node2D" parent="World"]
+position = Vector2(850.717703, 197.607656)
+
+[node name="Foreground" type="Polygon2D" parent="World/Cargo_NE"]
+texture_filter = 1
+texture = ExtResource("2_map")
+polygon = PackedVector2Array(-81.722488, -35.502392, -67.655502, -35.502392, -67.655502, -54.258373, 0.000000, -54.258373, 0.000000, -60.956938, 26.794258, -60.956938, 26.794258, -54.258373, 59.617225, -54.258373, 59.617225, -32.822967, 79.043062, -32.822967, 79.043062, 0.000000, -81.722488, 0.000000)
+uv = PackedVector2Array(1148.000000, 242.000000, 1169.000000, 242.000000, 1169.000000, 214.000000, 1270.000000, 214.000000, 1270.000000, 204.000000, 1310.000000, 204.000000, 1310.000000, 214.000000, 1359.000000, 214.000000, 1359.000000, 246.000000, 1388.000000, 246.000000, 1388.000000, 295.000000, 1148.000000, 295.000000)
+
+[node name="Body" type="StaticBody2D" parent="World/Cargo_NE"]
+collision_layer = 2
+collision_mask = 1
+
+[node name="Footprint" type="CollisionPolygon2D" parent="World/Cargo_NE/Body"]
+polygon = PackedVector2Array(-77.033493, -26.794258, 66.985646, -26.794258, 77.033493, -20.095694, 77.033493, 0.000000, -77.033493, 0.000000)
+
+[node name="Cargo_SW" type="Node2D" parent="World"]
+position = Vector2(278.995215, 470.239234)
+
+[node name="Foreground" type="Polygon2D" parent="World/Cargo_SW"]
+texture_filter = 1
+texture = ExtResource("2_map")
+polygon = PackedVector2Array(-85.406699, -42.200957, -74.019139, -42.200957, -74.019139, -54.258373, -7.033493, -54.258373, -7.033493, -58.947368, 21.100478, -58.947368, 21.100478, -51.578947, 72.679426, -51.578947, 72.679426, -34.832536, 84.066986, -34.832536, 84.066986, 0.000000, -85.406699, 0.000000)
+uv = PackedVector2Array(289.000000, 639.000000, 306.000000, 639.000000, 306.000000, 621.000000, 406.000000, 621.000000, 406.000000, 614.000000, 448.000000, 614.000000, 448.000000, 625.000000, 525.000000, 625.000000, 525.000000, 650.000000, 542.000000, 650.000000, 542.000000, 702.000000, 289.000000, 702.000000)
+
+[node name="Body" type="StaticBody2D" parent="World/Cargo_SW"]
+collision_layer = 2
+collision_mask = 1
+
+[node name="Footprint" type="CollisionPolygon2D" parent="World/Cargo_SW/Body"]
+polygon = PackedVector2Array(-80.717703, -29.473684, 80.717703, -29.473684, 80.717703, 0.000000, -80.717703, 0.000000)
+
+[node name="Cargo_S" type="Node2D" parent="World"]
+position = Vector2(560.669856, 470.239234)
+
+[node name="Foreground" type="Polygon2D" parent="World/Cargo_S"]
+texture_filter = 1
+texture = ExtResource("2_map")
+polygon = PackedVector2Array(-69.665072, -35.502392, -58.277512, -35.502392, -58.277512, -50.909091, -14.736842, -50.909091, -14.736842, -59.617225, 9.377990, -59.617225, 9.377990, -50.239234, 33.492823, -50.239234, 33.492823, -37.511962, 67.655502, -37.511962, 67.655502, 0.000000, -69.665072, 0.000000)
+uv = PackedVector2Array(733.000000, 649.000000, 750.000000, 649.000000, 750.000000, 626.000000, 815.000000, 626.000000, 815.000000, 613.000000, 851.000000, 613.000000, 851.000000, 627.000000, 887.000000, 627.000000, 887.000000, 646.000000, 938.000000, 646.000000, 938.000000, 702.000000, 733.000000, 702.000000)
+
+[node name="Body" type="StaticBody2D" parent="World/Cargo_S"]
+collision_layer = 2
+collision_mask = 1
+
+[node name="Footprint" type="CollisionPolygon2D" parent="World/Cargo_S/Body"]
+polygon = PackedVector2Array(-64.976077, -29.473684, 64.976077, -29.473684, 64.976077, 0.000000, -64.976077, 0.000000)
+
+[node name="Cargo_SE" type="Node2D" parent="World"]
+position = Vector2(845.023923, 470.909091)
+
+[node name="Foreground" type="Polygon2D" parent="World/Cargo_SE"]
+texture_filter = 1
+texture = ExtResource("2_map")
+polygon = PackedVector2Array(-90.095694, -36.842105, -78.038278, -36.842105, -78.038278, -54.928230, 13.062201, -54.928230, 13.062201, -60.956938, 37.177033, -60.956938, 37.177033, -52.248804, 73.349282, -52.248804, 73.349282, -36.842105, 88.086124, -36.842105, 88.086124, 0.000000, -90.095694, 0.000000)
+uv = PackedVector2Array(1127.000000, 648.000000, 1145.000000, 648.000000, 1145.000000, 621.000000, 1281.000000, 621.000000, 1281.000000, 612.000000, 1317.000000, 612.000000, 1317.000000, 625.000000, 1371.000000, 625.000000, 1371.000000, 648.000000, 1393.000000, 648.000000, 1393.000000, 703.000000, 1127.000000, 703.000000)
+
+[node name="Body" type="StaticBody2D" parent="World/Cargo_SE"]
+collision_layer = 2
+collision_mask = 1
+
+[node name="Footprint" type="CollisionPolygon2D" parent="World/Cargo_SE/Body"]
+polygon = PackedVector2Array(-84.736842, -30.143541, 84.736842, -30.143541, 84.736842, 0.000000, -84.736842, 0.000000)
+
+[node name="North" type="StaticBody2D" parent="Boundary"]
+position = Vector2(560.000000, 4.000000)
+collision_layer = 2
+collision_mask = 1
+
+[node name="Shape" type="CollisionShape2D" parent="Boundary/North"]
+shape = SubResource("Wall_0")
+
+[node name="South" type="StaticBody2D" parent="Boundary"]
+position = Vector2(560.000000, 626.000000)
+collision_layer = 2
+collision_mask = 1
+
+[node name="Shape" type="CollisionShape2D" parent="Boundary/South"]
+shape = SubResource("Wall_1")
+
+[node name="West" type="StaticBody2D" parent="Boundary"]
+position = Vector2(4.000000, 315.000000)
+collision_layer = 2
+collision_mask = 1
+
+[node name="Shape" type="CollisionShape2D" parent="Boundary/West"]
+shape = SubResource("Wall_2")
+
+[node name="East" type="StaticBody2D" parent="Boundary"]
+position = Vector2(1116.000000, 315.000000)
+collision_layer = 2
+collision_mask = 1
+
+[node name="Shape" type="CollisionShape2D" parent="Boundary/East"]
+shape = SubResource("Wall_3")
+
+[node name="P1" type="Marker2D" parent="SpawnPoints"]
+position = Vector2(100.000000, 105.000000)
+
+[node name="P2" type="Marker2D" parent="SpawnPoints"]
+position = Vector2(1020.000000, 105.000000)
+
+[node name="P3" type="Marker2D" parent="SpawnPoints"]
+position = Vector2(100.000000, 545.000000)
+
+[node name="P4" type="Marker2D" parent="SpawnPoints"]
+position = Vector2(1020.000000, 545.000000)

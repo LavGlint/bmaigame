@@ -1,0 +1,46 @@
+[
+  {
+    "file": "assets/maps/industrial/manifest.json",
+    "sha256": "f8431706ad1567960de360f28b1d6c1958cdd9ebd8f32b4544854ea994104e8e"
+  },
+  {
+    "file": "assets/maps/industrial/map.png",
+    "sha256": "1e04c1c634f8b3213619b83445f82d59f65ef33666991cfd22c143fade57de80"
+  },
+  {
+    "file": "assets/maps/industrial/map.tscn",
+    "sha256": "ee73be8fd94c0676827f6e373db92d592dcf7dca53a7ab607dc3c5b7045127b6"
+  },
+  {
+    "file": "assets/maps/ruins/manifest.json",
+    "sha256": "a1ad25570298c970f9a2974d92953cdbc00732101e7fa3b593b84f175a3a6095"
+  },
+  {
+    "file": "assets/maps/ruins/map.png",
+    "sha256": "e545bc92c4369ee472d67a2e6b71dbd3691b0203633c3232853262c7f2411a88"
+  },
+  {
+    "file": "assets/maps/ruins/map.tscn",
+    "sha256": "e6ff1b0c999daae52b9f5a5caf1661f8c99ab71fad289adf4cea78c1544c82e4"
+  },
+  {
+    "file": "assets/maps/woodland/manifest.json",
+    "sha256": "117ab5ce5eb7e9fdc6a4e613d5485591190ea19b1a7351dd733792006e210149"
+  },
+  {
+    "file": "assets/maps/woodland/map.png",
+    "sha256": "fe5535e59407a0aa5e46fc8983e013cda99b2871892f5d9d9e729d14299cdb80"
+  },
+  {
+    "file": "assets/maps/woodland/map.tscn",
+    "sha256": "5b597ab2bc9a617dc5f87a4640f65545de6896af89ce5efd01ae97150fe4996e"
+  },
+  {
+    "file": "scripts/maps/map_asset.gd",
+    "sha256": "af26d4dd831071e43095eda25ac72801f65f7c92305bfd0a1534796dd4aadd06"
+  },
+  {
+    "file": "scripts/maps/map_asset.gd.uid",
+    "sha256": "6b9b1ad4a8243ce2123a2483dd635bd6822b0a47a344f3cda7c7b28037f013fe"
+  }
+]

@@ -1,0 +1,9 @@
+THIRD-PARTY FONT NOTICE
+
+This software uses unmodified HarmonyOS Sans Fonts.
+Copyright 2021 Huawei Device Co., Ltd.
+
+HarmonyOS Sans Fonts are distributed with this software under the
+HarmonyOS Sans Fonts License Agreement. The complete copyright notice
+and license agreement are included in LICENSE.txt beside the font files,
+and in HarmonyOS-Sans-LICENSE.txt in the Windows distribution.

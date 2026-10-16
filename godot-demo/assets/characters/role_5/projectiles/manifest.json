@@ -1,0 +1,439 @@
+{
+  "role": "jiuhu",
+  "character": "酒狐",
+  "png": "atlas.png",
+  "size": [
+    1254,
+    1254
+  ],
+  "sha256": "eec9cf55bdb1be0fedcf0f3603d9f552b38b14afd9db7efa5f75a0ed1938226a",
+  "mode": "RGBA",
+  "filter": "nearest",
+  "source_pixels_modified": false,
+  "direction": "right (+X); rotate flight sprite for other directions",
+  "x_cuts": [
+    0,
+    313,
+    627,
+    955,
+    1254
+  ],
+  "y_cuts": [
+    0,
+    313,
+    643,
+    940,
+    1254
+  ],
+  "mechanic": {
+    "type": "wall_split",
+    "initial_projectiles": 1,
+    "child_count": 3,
+    "child_can_split": false,
+    "spread_angle": "configurable"
+  },
+  "logic": "每次发射一颗主光弹；主弹撞墙时销毁，并在碰撞处生成三颗独立子光弹。子弹默认不再次分裂；散射角留为参数。",
+  "animations": {
+    "flight": {
+      "label": "单颗主光弹",
+      "row": 0,
+      "frame_count": 4,
+      "fps": 12,
+      "loop": true,
+      "recommended_display_width": 28,
+      "display_scale": 0.0968858,
+      "frames": [
+        {
+          "region": [
+            28,
+            113,
+            273,
+            172
+          ],
+          "anchor": [
+            164.5,
+            199.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "alpha_bounds_in_cell": [
+            31,
+            116,
+            298,
+            282
+          ]
+        },
+        {
+          "region": [
+            336,
+            113,
+            274,
+            183
+          ],
+          "anchor": [
+            472.5,
+            204.5
+          ],
+          "offset": [
+            0.5,
+            0.0
+          ],
+          "alpha_bounds_in_cell": [
+            26,
+            116,
+            294,
+            293
+          ]
+        },
+        {
+          "region": [
+            632,
+            113,
+            295,
+            182
+          ],
+          "anchor": [
+            779.5,
+            204.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "alpha_bounds_in_cell": [
+            8,
+            116,
+            297,
+            292
+          ]
+        },
+        {
+          "region": [
+            958,
+            113,
+            276,
+            181
+          ],
+          "anchor": [
+            1096.0,
+            204.0
+          ],
+          "offset": [
+            0.0,
+            -0.5
+          ],
+          "alpha_bounds_in_cell": [
+            6,
+            116,
+            276,
+            291
+          ]
+        }
+      ],
+      "anchor_policy": "visible silhouette center"
+    },
+    "split": {
+      "label": "碰墙分裂闪光",
+      "row": 1,
+      "frame_count": 4,
+      "fps": 16,
+      "loop": false,
+      "recommended_display_width": 52,
+      "display_scale": 0.1710526,
+      "frames": [
+        {
+          "region": [
+            61,
+            411,
+            206,
+            197
+          ],
+          "anchor": [
+            164.0,
+            510.0
+          ],
+          "offset": [
+            0.0,
+            -0.5
+          ],
+          "alpha_bounds_in_cell": [
+            64,
+            101,
+            264,
+            292
+          ]
+        },
+        {
+          "region": [
+            345,
+            373,
+            254,
+            241
+          ],
+          "anchor": [
+            472.5,
+            494.0
+          ],
+          "offset": [
+            -0.5,
+            -0.5
+          ],
+          "alpha_bounds_in_cell": [
+            35,
+            63,
+            283,
+            298
+          ]
+        },
+        {
+          "region": [
+            648,
+            350,
+            307,
+            293
+          ],
+          "anchor": [
+            803.0,
+            498.0
+          ],
+          "offset": [
+            -1.5,
+            -1.5
+          ],
+          "alpha_bounds_in_cell": [
+            24,
+            40,
+            328,
+            330
+          ]
+        },
+        {
+          "region": [
+            988,
+            387,
+            228,
+            239
+          ],
+          "anchor": [
+            1102.0,
+            506.0
+          ],
+          "offset": [
+            0.0,
+            0.5
+          ],
+          "alpha_bounds_in_cell": [
+            36,
+            77,
+            258,
+            310
+          ]
+        }
+      ],
+      "anchor_policy": "visible silhouette center"
+    },
+    "child": {
+      "label": "独立子光弹",
+      "row": 2,
+      "frame_count": 4,
+      "fps": 12,
+      "loop": true,
+      "recommended_display_width": 18,
+      "display_scale": 0.0772532,
+      "frames": [
+        {
+          "region": [
+            67,
+            743,
+            204,
+            136
+          ],
+          "anchor": [
+            169.0,
+            811.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "alpha_bounds_in_cell": [
+            70,
+            103,
+            268,
+            233
+          ]
+        },
+        {
+          "region": [
+            354,
+            740,
+            229,
+            143
+          ],
+          "anchor": [
+            469.0,
+            811.5
+          ],
+          "offset": [
+            -0.5,
+            0.0
+          ],
+          "alpha_bounds_in_cell": [
+            44,
+            100,
+            267,
+            237
+          ]
+        },
+        {
+          "region": [
+            674,
+            747,
+            239,
+            136
+          ],
+          "anchor": [
+            793.0,
+            815.0
+          ],
+          "offset": [
+            0.5,
+            0.0
+          ],
+          "alpha_bounds_in_cell": [
+            50,
+            107,
+            283,
+            237
+          ]
+        },
+        {
+          "region": [
+            998,
+            747,
+            218,
+            132
+          ],
+          "anchor": [
+            1107.0,
+            813.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "alpha_bounds_in_cell": [
+            46,
+            107,
+            258,
+            233
+          ]
+        }
+      ],
+      "anchor_policy": "visible silhouette center"
+    },
+    "impact": {
+      "label": "光弹命中",
+      "row": 3,
+      "frame_count": 4,
+      "fps": 16,
+      "loop": false,
+      "recommended_display_width": 40,
+      "display_scale": 0.2139037,
+      "frames": [
+        {
+          "region": [
+            85,
+            962,
+            192,
+            208
+          ],
+          "anchor": [
+            181.0,
+            1066.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "alpha_bounds_in_cell": [
+            88,
+            25,
+            274,
+            227
+          ]
+        },
+        {
+          "region": [
+            398,
+            977,
+            193,
+            183
+          ],
+          "anchor": [
+            494.5,
+            1068.0
+          ],
+          "offset": [
+            0.0,
+            0.5
+          ],
+          "alpha_bounds_in_cell": [
+            88,
+            40,
+            275,
+            217
+          ]
+        },
+        {
+          "region": [
+            710,
+            977,
+            192,
+            173
+          ],
+          "anchor": [
+            806.0,
+            1063.5
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "alpha_bounds_in_cell": [
+            86,
+            40,
+            272,
+            207
+          ]
+        },
+        {
+          "region": [
+            1041,
+            985,
+            165,
+            158
+          ],
+          "anchor": [
+            1123.5,
+            1064.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "alpha_bounds_in_cell": [
+            89,
+            48,
+            248,
+            200
+          ]
+        }
+      ],
+      "anchor_policy": "visible silhouette center"
+    }
+  },
+  "note": "Native generated high-resolution pixel-style art. Display size is configurable; not a native 32x32 sprite sheet. Collision and damage are game logic, not alpha bounds."
+}

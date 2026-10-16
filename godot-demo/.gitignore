@@ -1,0 +1,5 @@
+.godot/
+outputs/*.exe
+outputs/*.pck
+outputs/*.zip
+outputs/*.log

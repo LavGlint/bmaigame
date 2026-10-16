@@ -1,0 +1,436 @@
+{
+  "role": "glm",
+  "character": "GLM娘",
+  "png": "atlas.png",
+  "size": [
+    1254,
+    1254
+  ],
+  "sha256": "d0b324e0723549a50ccf4adba4663474e2f5540c2fafac7fac24cd71bf7b5ce1",
+  "mode": "RGBA",
+  "filter": "nearest",
+  "source_pixels_modified": false,
+  "direction": "right (+X); rotate flight sprite for other directions",
+  "x_cuts": [
+    0,
+    313,
+    622,
+    940,
+    1254
+  ],
+  "y_cuts": [
+    0,
+    313,
+    658,
+    940,
+    1254
+  ],
+  "mechanic": {
+    "type": "gas_to_toxic_pool",
+    "on_obstacle": "replace_with_pool"
+  },
+  "logic": "毒气弹碰到障碍物转为毒泽，弹体移除，毒泽留在碰撞处。毒泽不随角色移动。",
+  "animations": {
+    "flight": {
+      "label": "毒气弹飞行",
+      "row": 0,
+      "frame_count": 4,
+      "fps": 12,
+      "loop": true,
+      "recommended_display_width": 24,
+      "display_scale": 0.0912548,
+      "frames": [
+        {
+          "region": [
+            37,
+            98,
+            246,
+            192
+          ],
+          "anchor": [
+            160.0,
+            194.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "alpha_bounds_in_cell": [
+            40,
+            101,
+            280,
+            287
+          ]
+        },
+        {
+          "region": [
+            338,
+            98,
+            269,
+            199
+          ],
+          "anchor": [
+            472.5,
+            197.5
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "alpha_bounds_in_cell": [
+            28,
+            101,
+            291,
+            294
+          ]
+        },
+        {
+          "region": [
+            659,
+            98,
+            260,
+            200
+          ],
+          "anchor": [
+            788.5,
+            198.0
+          ],
+          "offset": [
+            0.5,
+            0.0
+          ],
+          "alpha_bounds_in_cell": [
+            40,
+            101,
+            294,
+            295
+          ]
+        },
+        {
+          "region": [
+            971,
+            96,
+            254,
+            199
+          ],
+          "anchor": [
+            1098.0,
+            195.5
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "alpha_bounds_in_cell": [
+            34,
+            99,
+            282,
+            292
+          ]
+        }
+      ],
+      "anchor_policy": "visible silhouette center"
+    },
+    "burst": {
+      "label": "毒雾释放",
+      "row": 1,
+      "frame_count": 4,
+      "fps": 16,
+      "loop": false,
+      "recommended_display_width": 128,
+      "display_scale": 0.4129032,
+      "frames": [
+        {
+          "region": [
+            27,
+            359,
+            271,
+            290
+          ],
+          "anchor": [
+            162.0,
+            504.0
+          ],
+          "offset": [
+            0.5,
+            0.0
+          ],
+          "alpha_bounds_in_cell": [
+            30,
+            49,
+            295,
+            333
+          ]
+        },
+        {
+          "region": [
+            316,
+            366,
+            295,
+            276
+          ],
+          "anchor": [
+            464.0,
+            504.0
+          ],
+          "offset": [
+            -0.5,
+            0.0
+          ],
+          "alpha_bounds_in_cell": [
+            6,
+            56,
+            295,
+            326
+          ]
+        },
+        {
+          "region": [
+            622,
+            416,
+            314,
+            242
+          ],
+          "anchor": [
+            778.0,
+            538.0
+          ],
+          "offset": [
+            1.0,
+            -1.0
+          ],
+          "alpha_bounds_in_cell": [
+            1,
+            106,
+            311,
+            345
+          ]
+        },
+        {
+          "region": [
+            944,
+            480,
+            302,
+            177
+          ],
+          "anchor": [
+            1095.0,
+            568.5
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "alpha_bounds_in_cell": [
+            7,
+            170,
+            303,
+            341
+          ]
+        }
+      ],
+      "anchor_policy": "visible silhouette center"
+    },
+    "pool": {
+      "label": "毒泽持续",
+      "row": 2,
+      "frame_count": 4,
+      "fps": 8,
+      "loop": true,
+      "recommended_display_width": 128,
+      "display_scale": 0.4353741,
+      "frames": [
+        {
+          "region": [
+            10,
+            731,
+            298,
+            178
+          ],
+          "anchor": [
+            159.0,
+            853.0
+          ],
+          "offset": [
+            0.0,
+            -33.0
+          ],
+          "alpha_bounds_in_cell": [
+            13,
+            76,
+            305,
+            248
+          ]
+        },
+        {
+          "region": [
+            321,
+            719,
+            300,
+            196
+          ],
+          "anchor": [
+            471.0,
+            855.0
+          ],
+          "offset": [
+            0.0,
+            -38.0
+          ],
+          "alpha_bounds_in_cell": [
+            11,
+            64,
+            305,
+            254
+          ]
+        },
+        {
+          "region": [
+            636,
+            734,
+            291,
+            177
+          ],
+          "anchor": [
+            781.0,
+            853.0
+          ],
+          "offset": [
+            0.5,
+            -30.5
+          ],
+          "alpha_bounds_in_cell": [
+            17,
+            79,
+            302,
+            250
+          ]
+        },
+        {
+          "region": [
+            947,
+            730,
+            294,
+            183
+          ],
+          "anchor": [
+            1094.0,
+            855.5
+          ],
+          "offset": [
+            0.0,
+            -34.0
+          ],
+          "alpha_bounds_in_cell": [
+            10,
+            75,
+            298,
+            252
+          ]
+        }
+      ],
+      "anchor_policy": "ground ellipse center"
+    },
+    "expire": {
+      "label": "毒泽消退",
+      "row": 3,
+      "frame_count": 4,
+      "fps": 12,
+      "loop": false,
+      "recommended_display_width": 128,
+      "display_scale": 0.4353741,
+      "frames": [
+        {
+          "region": [
+            10,
+            983,
+            298,
+            211
+          ],
+          "anchor": [
+            159.5,
+            1134.5
+          ],
+          "offset": [
+            -0.5,
+            -46.0
+          ],
+          "alpha_bounds_in_cell": [
+            13,
+            46,
+            305,
+            251
+          ]
+        },
+        {
+          "region": [
+            332,
+            1029,
+            286,
+            159
+          ],
+          "anchor": [
+            475.5,
+            1142.0
+          ],
+          "offset": [
+            -0.5,
+            -33.5
+          ],
+          "alpha_bounds_in_cell": [
+            22,
+            92,
+            302,
+            245
+          ]
+        },
+        {
+          "region": [
+            656,
+            1045,
+            269,
+            150
+          ],
+          "anchor": [
+            790.0,
+            1159.5
+          ],
+          "offset": [
+            0.5,
+            -39.5
+          ],
+          "alpha_bounds_in_cell": [
+            37,
+            108,
+            300,
+            252
+          ]
+        },
+        {
+          "region": [
+            975,
+            1062,
+            248,
+            131
+          ],
+          "anchor": [
+            1099.5,
+            1142.0
+          ],
+          "offset": [
+            -0.5,
+            -14.5
+          ],
+          "alpha_bounds_in_cell": [
+            38,
+            125,
+            280,
+            250
+          ]
+        }
+      ],
+      "anchor_policy": "ground ellipse center"
+    }
+  },
+  "note": "Native generated high-resolution pixel-style art. Display size is configurable; not a native 32x32 sprite sheet. Collision and damage are game logic, not alpha bounds."
+}

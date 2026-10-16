@@ -1,0 +1,286 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://scripts/maps/map_asset.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/maps/ruins/map.png" id="2_map"]
+
+[sub_resource type="RectangleShape2D" id="Wall_0"]
+size = Vector2(1080.000000, 32.000000)
+
+[sub_resource type="RectangleShape2D" id="Wall_1"]
+size = Vector2(1080.000000, 32.000000)
+
+[sub_resource type="RectangleShape2D" id="Wall_2"]
+size = Vector2(32.000000, 654.000000)
+
+[sub_resource type="RectangleShape2D" id="Wall_3"]
+size = Vector2(32.000000, 654.000000)
+
+[node name="RuinsMap" type="Node2D"]
+script = ExtResource("1_script")
+manifest_path = "res://assets/maps/ruins/manifest.json"
+
+[node name="Ground" type="Sprite2D" parent="."]
+z_index = -10
+texture_filter = 1
+texture = ExtResource("2_map")
+centered = false
+scale = Vector2(0.669856, 0.669856)
+
+[node name="World" type="Node2D" parent="."]
+y_sort_enabled = true
+
+[node name="Boundary" type="Node2D" parent="."]
+
+[node name="SpawnPoints" type="Node2D" parent="."]
+
+[node name="CentralAltar" type="Node2D" parent="World"]
+position = Vector2(560.669856, 398.564593)
+
+[node name="Foreground" type="Polygon2D" parent="World/CentralAltar"]
+texture_filter = 1
+texture = ExtResource("2_map")
+polygon = PackedVector2Array(-67.655502, -217.703349, -53.588517, -209.665072, -52.248804, -190.909091, 48.229665, -190.909091, 48.229665, -217.703349, 66.985646, -218.373206, 81.052632, -205.645933, 81.052632, -184.880383, 112.535885, -158.755981, 124.593301, -123.923445, 124.593301, -69.665072, 109.856459, -36.842105, 72.344498, -11.387560, -60.287081, 0.000000, -101.818182, -28.133971, -121.913876, -62.296651, -121.913876, -131.961722, -101.818182, -165.454545, -69.665072, -188.899522)
+uv = PackedVector2Array(736.000000, 270.000000, 757.000000, 282.000000, 759.000000, 310.000000, 909.000000, 310.000000, 909.000000, 270.000000, 937.000000, 269.000000, 958.000000, 288.000000, 958.000000, 319.000000, 1005.000000, 358.000000, 1023.000000, 410.000000, 1023.000000, 491.000000, 1001.000000, 540.000000, 945.000000, 578.000000, 747.000000, 595.000000, 685.000000, 553.000000, 655.000000, 502.000000, 655.000000, 398.000000, 685.000000, 348.000000, 733.000000, 313.000000)
+
+[node name="Body" type="StaticBody2D" parent="World/CentralAltar"]
+collision_layer = 2
+collision_mask = 1
+
+[node name="Footprint" type="CollisionPolygon2D" parent="World/CentralAltar/Body"]
+polygon = PackedVector2Array(-60.287081, -180.191388, 55.598086, -180.191388, 106.507177, -140.000000, 117.224880, -105.167464, 117.224880, -66.985646, 71.674641, -12.727273, -56.267943, -4.019139, -103.157895, -32.153110, -117.224880, -66.985646, -117.224880, -131.961722, -97.799043, -154.736842)
+
+[node name="Wall_NW" type="Node2D" parent="World"]
+position = Vector2(337.942584, 207.655502)
+
+[node name="Foreground" type="Polygon2D" parent="World/Wall_NW"]
+texture_filter = 1
+texture = ExtResource("2_map")
+polygon = PackedVector2Array(-38.516746, -125.263158, -18.421053, -123.253589, -18.421053, -110.526316, 59.952153, -105.167464, 61.291866, -62.296651, -30.478469, -62.296651, -30.478469, 0.000000, -59.282297, 0.000000, -59.282297, -91.770335, -39.186603, -95.789474)
+uv = PackedVector2Array(447.000000, 123.000000, 477.000000, 126.000000, 477.000000, 145.000000, 594.000000, 153.000000, 596.000000, 217.000000, 459.000000, 217.000000, 459.000000, 310.000000, 416.000000, 310.000000, 416.000000, 173.000000, 446.000000, 167.000000)
+
+[node name="Body" type="StaticBody2D" parent="World/Wall_NW"]
+collision_layer = 2
+collision_mask = 1
+
+[node name="Footprint" type="CollisionPolygon2D" parent="World/Wall_NW/Body"]
+polygon = PackedVector2Array(-38.516746, -84.401914, 58.612440, -84.401914, 58.612440, -62.296651, -35.837321, -62.296651, -35.837321, 0.000000, -58.612440, 0.000000, -58.612440, -68.995215, -38.516746, -73.684211)
+
+[node name="Wall_NE" type="Node2D" parent="World"]
+position = Vector2(796.459330, 211.674641)
+
+[node name="Foreground" type="Polygon2D" parent="World/Wall_NE"]
+texture_filter = 1
+texture = ExtResource("2_map")
+polygon = PackedVector2Array(-47.559809, -128.612440, -24.114833, -124.593301, -24.114833, -81.722488, 43.540670, -80.382775, 48.229665, -54.258373, 48.229665, 0.000000, 23.444976, 0.000000, 14.736842, -43.540670, -60.956938, -43.540670, -60.956938, -83.732057, -48.229665, -87.751196)
+uv = PackedVector2Array(1118.000000, 124.000000, 1153.000000, 130.000000, 1153.000000, 194.000000, 1254.000000, 196.000000, 1261.000000, 235.000000, 1261.000000, 316.000000, 1224.000000, 316.000000, 1211.000000, 251.000000, 1098.000000, 251.000000, 1098.000000, 191.000000, 1117.000000, 185.000000)
+
+[node name="Body" type="StaticBody2D" parent="World/Wall_NE"]
+collision_layer = 2
+collision_mask = 1
+
+[node name="Footprint" type="CollisionPolygon2D" parent="World/Wall_NE/Body"]
+polygon = PackedVector2Array(-46.220096, -84.401914, -23.444976, -84.401914, -23.444976, -60.956938, 46.220096, -60.956938, 46.220096, 0.000000, 24.114833, 0.000000, 24.114833, -42.870813, -46.220096, -42.870813)
+
+[node name="Wall_SW" type="Node2D" parent="World"]
+position = Vector2(330.909091, 499.043062)
+
+[node name="Foreground" type="Polygon2D" parent="World/Wall_SW"]
+texture_filter = 1
+texture = ExtResource("2_map")
+polygon = PackedVector2Array(-53.588517, -125.263158, -30.813397, -123.253589, -29.473684, -70.334928, 46.220096, -67.655502, 55.598086, -63.636364, 55.598086, -6.698565, 31.483254, 0.000000, -54.258373, -23.444976)
+uv = PackedVector2Array(414.000000, 558.000000, 448.000000, 561.000000, 450.000000, 640.000000, 563.000000, 644.000000, 577.000000, 650.000000, 577.000000, 735.000000, 541.000000, 745.000000, 413.000000, 710.000000)
+
+[node name="Body" type="StaticBody2D" parent="World/Wall_SW"]
+collision_layer = 2
+collision_mask = 1
+
+[node name="Footprint" type="CollisionPolygon2D" parent="World/Wall_SW/Body"]
+polygon = PackedVector2Array(-53.588517, -79.043062, -30.143541, -79.043062, -30.143541, -42.200957, 53.588517, -42.200957, 53.588517, -9.377990, -53.588517, -9.377990)
+
+[node name="Wall_SE" type="Node2D" parent="World"]
+position = Vector2(789.090909, 506.411483)
+
+[node name="Foreground" type="Polygon2D" parent="World/Wall_SE"]
+texture_filter = 1
+texture = ExtResource("2_map")
+polygon = PackedVector2Array(21.435407, -122.583732, 47.559809, -118.564593, 54.928230, -106.507177, 54.928230, -0.669856, 26.794258, 0.000000, 26.794258, -21.435407, -52.918660, -21.435407, -56.267943, -54.258373, 21.435407, -71.004785)
+uv = PackedVector2Array(1210.000000, 573.000000, 1249.000000, 579.000000, 1260.000000, 597.000000, 1260.000000, 755.000000, 1218.000000, 756.000000, 1218.000000, 724.000000, 1099.000000, 724.000000, 1094.000000, 675.000000, 1210.000000, 650.000000)
+
+[node name="Body" type="StaticBody2D" parent="World/Wall_SE"]
+collision_layer = 2
+collision_mask = 1
+
+[node name="Footprint" type="CollisionPolygon2D" parent="World/Wall_SE/Body"]
+polygon = PackedVector2Array(26.794258, -76.363636, 53.588517, -76.363636, 53.588517, 0.669856, -53.588517, 0.669856, -53.588517, -25.454545, 26.794258, -25.454545)
+
+[node name="Column_NW" type="Node2D" parent="World"]
+position = Vector2(177.511962, 87.751196)
+
+[node name="Foreground" type="Polygon2D" parent="World/Column_NW"]
+texture_filter = 1
+texture = ExtResource("2_map")
+polygon = PackedVector2Array(-24.784689, -83.732057, 24.784689, -83.732057, 24.784689, 0.000000, -24.784689, 0.000000)
+uv = PackedVector2Array(228.000000, 6.000000, 302.000000, 6.000000, 302.000000, 131.000000, 228.000000, 131.000000)
+
+[node name="Body" type="StaticBody2D" parent="World/Column_NW"]
+collision_layer = 2
+collision_mask = 1
+
+[node name="Footprint" type="CollisionPolygon2D" parent="World/Column_NW/Body"]
+polygon = PackedVector2Array(-22.775120, -33.492823, 22.775120, -33.492823, 22.775120, -2.679426, -22.775120, -2.679426)
+
+[node name="Column_NE" type="Node2D" parent="World"]
+position = Vector2(946.507177, 86.411483)
+
+[node name="Foreground" type="Polygon2D" parent="World/Column_NE"]
+texture_filter = 1
+texture = ExtResource("2_map")
+polygon = PackedVector2Array(-27.464115, -81.052632, 25.454545, -81.052632, 25.454545, 0.000000, -27.464115, 0.000000)
+uv = PackedVector2Array(1372.000000, 8.000000, 1451.000000, 8.000000, 1451.000000, 129.000000, 1372.000000, 129.000000)
+
+[node name="Body" type="StaticBody2D" parent="World/Column_NE"]
+collision_layer = 2
+collision_mask = 1
+
+[node name="Footprint" type="CollisionPolygon2D" parent="World/Column_NE/Body"]
+polygon = PackedVector2Array(-23.444976, -27.464115, 23.444976, -27.464115, 23.444976, -0.669856, -23.444976, -0.669856)
+
+[node name="Column_WN" type="Node2D" parent="World"]
+position = Vector2(86.411483, 160.095694)
+
+[node name="Foreground" type="Polygon2D" parent="World/Column_WN"]
+texture_filter = 1
+texture = ExtResource("2_map")
+polygon = PackedVector2Array(-24.784689, -54.928230, 23.444976, -54.928230, 23.444976, 0.000000, -24.784689, 0.000000)
+uv = PackedVector2Array(92.000000, 157.000000, 164.000000, 157.000000, 164.000000, 239.000000, 92.000000, 239.000000)
+
+[node name="Body" type="StaticBody2D" parent="World/Column_WN"]
+collision_layer = 2
+collision_mask = 1
+
+[node name="Footprint" type="CollisionPolygon2D" parent="World/Column_WN/Body"]
+polygon = PackedVector2Array(-22.105263, -19.425837, 22.105263, -19.425837, 22.105263, -1.339713, -22.105263, -1.339713)
+
+[node name="Column_EN" type="Node2D" parent="World"]
+position = Vector2(1038.947368, 161.435407)
+
+[node name="Foreground" type="Polygon2D" parent="World/Column_EN"]
+texture_filter = 1
+texture = ExtResource("2_map")
+polygon = PackedVector2Array(-25.454545, -60.956938, 24.784689, -60.956938, 24.784689, 0.000000, -25.454545, 0.000000)
+uv = PackedVector2Array(1513.000000, 150.000000, 1588.000000, 150.000000, 1588.000000, 241.000000, 1513.000000, 241.000000)
+
+[node name="Body" type="StaticBody2D" parent="World/Column_EN"]
+collision_layer = 2
+collision_mask = 1
+
+[node name="Footprint" type="CollisionPolygon2D" parent="World/Column_EN/Body"]
+polygon = PackedVector2Array(-22.775120, -21.435407, 22.775120, -21.435407, 22.775120, -1.339713, -22.775120, -1.339713)
+
+[node name="Column_WS" type="Node2D" parent="World"]
+position = Vector2(88.086124, 476.937799)
+
+[node name="Foreground" type="Polygon2D" parent="World/Column_WS"]
+texture_filter = 1
+texture = ExtResource("2_map")
+polygon = PackedVector2Array(-26.459330, -60.956938, 26.459330, -60.956938, 26.459330, 0.000000, -26.459330, 0.000000)
+uv = PackedVector2Array(92.000000, 621.000000, 171.000000, 621.000000, 171.000000, 712.000000, 92.000000, 712.000000)
+
+[node name="Body" type="StaticBody2D" parent="World/Column_WS"]
+collision_layer = 2
+collision_mask = 1
+
+[node name="Footprint" type="CollisionPolygon2D" parent="World/Column_WS/Body"]
+polygon = PackedVector2Array(-23.110048, -24.784689, 23.110048, -24.784689, 23.110048, -0.669856, -23.110048, -0.669856)
+
+[node name="Column_ES" type="Node2D" parent="World"]
+position = Vector2(1034.928230, 480.287081)
+
+[node name="Foreground" type="Polygon2D" parent="World/Column_ES"]
+texture_filter = 1
+texture = ExtResource("2_map")
+polygon = PackedVector2Array(-26.794258, -62.966507, 25.454545, -62.966507, 25.454545, 0.000000, -26.794258, 0.000000)
+uv = PackedVector2Array(1505.000000, 623.000000, 1583.000000, 623.000000, 1583.000000, 717.000000, 1505.000000, 717.000000)
+
+[node name="Body" type="StaticBody2D" parent="World/Column_ES"]
+collision_layer = 2
+collision_mask = 1
+
+[node name="Footprint" type="CollisionPolygon2D" parent="World/Column_ES/Body"]
+polygon = PackedVector2Array(-23.444976, -23.444976, 23.444976, -23.444976, 23.444976, -1.339713, -23.444976, -1.339713)
+
+[node name="Column_SW" type="Node2D" parent="World"]
+position = Vector2(176.842105, 594.832536)
+
+[node name="Foreground" type="Polygon2D" parent="World/Column_SW"]
+texture_filter = 1
+texture = ExtResource("2_map")
+polygon = PackedVector2Array(-25.454545, -79.043062, 24.784689, -79.043062, 24.784689, 0.000000, -25.454545, 0.000000)
+uv = PackedVector2Array(226.000000, 770.000000, 301.000000, 770.000000, 301.000000, 888.000000, 226.000000, 888.000000)
+
+[node name="Body" type="StaticBody2D" parent="World/Column_SW"]
+collision_layer = 2
+collision_mask = 1
+
+[node name="Footprint" type="CollisionPolygon2D" parent="World/Column_SW/Body"]
+polygon = PackedVector2Array(-22.775120, -26.124402, 22.775120, -26.124402, 22.775120, -2.009569, -22.775120, -2.009569)
+
+[node name="Column_SE" type="Node2D" parent="World"]
+position = Vector2(949.186603, 596.842105)
+
+[node name="Foreground" type="Polygon2D" parent="World/Column_SE"]
+texture_filter = 1
+texture = ExtResource("2_map")
+polygon = PackedVector2Array(-26.794258, -82.392344, 26.124402, -82.392344, 26.124402, 0.000000, -26.794258, 0.000000)
+uv = PackedVector2Array(1377.000000, 768.000000, 1456.000000, 768.000000, 1456.000000, 891.000000, 1377.000000, 891.000000)
+
+[node name="Body" type="StaticBody2D" parent="World/Column_SE"]
+collision_layer = 2
+collision_mask = 1
+
+[node name="Footprint" type="CollisionPolygon2D" parent="World/Column_SE/Body"]
+polygon = PackedVector2Array(-23.444976, -26.124402, 23.444976, -26.124402, 23.444976, -2.009569, -23.444976, -2.009569)
+
+[node name="North" type="StaticBody2D" parent="Boundary"]
+position = Vector2(560.000000, 4.000000)
+collision_layer = 2
+collision_mask = 1
+
+[node name="Shape" type="CollisionShape2D" parent="Boundary/North"]
+shape = SubResource("Wall_0")
+
+[node name="South" type="StaticBody2D" parent="Boundary"]
+position = Vector2(560.000000, 626.000000)
+collision_layer = 2
+collision_mask = 1
+
+[node name="Shape" type="CollisionShape2D" parent="Boundary/South"]
+shape = SubResource("Wall_1")
+
+[node name="West" type="StaticBody2D" parent="Boundary"]
+position = Vector2(4.000000, 315.000000)
+collision_layer = 2
+collision_mask = 1
+
+[node name="Shape" type="CollisionShape2D" parent="Boundary/West"]
+shape = SubResource("Wall_2")
+
+[node name="East" type="StaticBody2D" parent="Boundary"]
+position = Vector2(1116.000000, 315.000000)
+collision_layer = 2
+collision_mask = 1
+
+[node name="Shape" type="CollisionShape2D" parent="Boundary/East"]
+shape = SubResource("Wall_3")
+
+[node name="P1" type="Marker2D" parent="SpawnPoints"]
+position = Vector2(100.000000, 105.000000)
+
+[node name="P2" type="Marker2D" parent="SpawnPoints"]
+position = Vector2(1020.000000, 105.000000)
+
+[node name="P3" type="Marker2D" parent="SpawnPoints"]
+position = Vector2(100.000000, 545.000000)
+
+[node name="P4" type="Marker2D" parent="SpawnPoints"]
+position = Vector2(1020.000000, 545.000000)

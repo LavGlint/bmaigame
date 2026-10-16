@@ -1,0 +1,439 @@
+{
+  "role": "gpt",
+  "character": "GPT娘",
+  "png": "atlas.png",
+  "size": [
+    1254,
+    1254
+  ],
+  "sha256": "d83a52de88074e3017d1dfaff031ae018d3e012044cea0f6e8505456ee527195",
+  "mode": "RGBA",
+  "filter": "nearest",
+  "source_pixels_modified": false,
+  "direction": "right (+X); rotate flight sprite for other directions",
+  "x_cuts": [
+    0,
+    318,
+    622,
+    936,
+    1254
+  ],
+  "y_cuts": [
+    0,
+    327,
+    639,
+    940,
+    1254
+  ],
+  "mechanic": {
+    "type": "continuous_dragon_flame_jet",
+    "continuous": true,
+    "origin": "character attack emitter",
+    "aoe": "forward cone",
+    "burn": true
+  },
+  "logic": "龙炎像喷火器持续喷射，喷口绑定角色发射点，沿瞄准方向覆盖较大范围并施加烧伤。喷流持续时检测覆盖区，不生成独立飞行火球。喷射距离、扇形宽度、持续时间及烧伤数值由玩法参数决定。",
+  "animations": {
+    "start": {
+      "label": "起喷",
+      "row": 0,
+      "frame_count": 4,
+      "fps": 16,
+      "loop": false,
+      "recommended_display_width": 144,
+      "display_scale": 0.4675325,
+      "frames": [
+        {
+          "region": [
+            9,
+            190,
+            152,
+            81
+          ],
+          "anchor": [
+            14,
+            230.0
+          ],
+          "offset": [
+            71.0,
+            0.5
+          ],
+          "alpha_bounds_in_cell": [
+            12,
+            193,
+            158,
+            268
+          ]
+        },
+        {
+          "region": [
+            319,
+            152,
+            271,
+            139
+          ],
+          "anchor": [
+            325,
+            232.0
+          ],
+          "offset": [
+            129.5,
+            -10.5
+          ],
+          "alpha_bounds_in_cell": [
+            4,
+            155,
+            269,
+            288
+          ]
+        },
+        {
+          "region": [
+            622,
+            122,
+            303,
+            205
+          ],
+          "anchor": [
+            625,
+            231.0
+          ],
+          "offset": [
+            148.5,
+            -6.5
+          ],
+          "alpha_bounds_in_cell": [
+            0,
+            125,
+            300,
+            327
+          ]
+        },
+        {
+          "region": [
+            936,
+            58,
+            312,
+            269
+          ],
+          "anchor": [
+            940,
+            231.0
+          ],
+          "offset": [
+            152.0,
+            -38.5
+          ],
+          "alpha_bounds_in_cell": [
+            1,
+            61,
+            309,
+            325
+          ]
+        }
+      ],
+      "anchor_policy": "flame emitter root"
+    },
+    "jet": {
+      "label": "持续喷射",
+      "row": 1,
+      "frame_count": 4,
+      "fps": 12,
+      "loop": true,
+      "recommended_display_width": 144,
+      "display_scale": 0.4675325,
+      "frames": [
+        {
+          "region": [
+            9,
+            376,
+            309,
+            255
+          ],
+          "anchor": [
+            14,
+            532.0
+          ],
+          "offset": [
+            149.5,
+            -28.5
+          ],
+          "alpha_bounds_in_cell": [
+            12,
+            52,
+            318,
+            301
+          ]
+        },
+        {
+          "region": [
+            318,
+            376,
+            304,
+            263
+          ],
+          "anchor": [
+            323,
+            534.0
+          ],
+          "offset": [
+            147.0,
+            -26.5
+          ],
+          "alpha_bounds_in_cell": [
+            0,
+            52,
+            304,
+            312
+          ]
+        },
+        {
+          "region": [
+            622,
+            376,
+            314,
+            262
+          ],
+          "anchor": [
+            629,
+            534.0
+          ],
+          "offset": [
+            150.0,
+            -27.0
+          ],
+          "alpha_bounds_in_cell": [
+            0,
+            52,
+            311,
+            308
+          ]
+        },
+        {
+          "region": [
+            936,
+            376,
+            312,
+            262
+          ],
+          "anchor": [
+            940,
+            535.0
+          ],
+          "offset": [
+            152.0,
+            -28.0
+          ],
+          "alpha_bounds_in_cell": [
+            1,
+            52,
+            309,
+            308
+          ]
+        }
+      ],
+      "anchor_policy": "flame emitter root"
+    },
+    "stop": {
+      "label": "停喷",
+      "row": 2,
+      "frame_count": 4,
+      "fps": 16,
+      "loop": false,
+      "recommended_display_width": 144,
+      "display_scale": 0.4675325,
+      "frames": [
+        {
+          "region": [
+            9,
+            684,
+            309,
+            239
+          ],
+          "anchor": [
+            15,
+            822.0
+          ],
+          "offset": [
+            148.5,
+            -18.5
+          ],
+          "alpha_bounds_in_cell": [
+            12,
+            48,
+            318,
+            281
+          ]
+        },
+        {
+          "region": [
+            331,
+            732,
+            268,
+            162
+          ],
+          "anchor": [
+            337,
+            824.0
+          ],
+          "offset": [
+            128.0,
+            -11.0
+          ],
+          "alpha_bounds_in_cell": [
+            16,
+            96,
+            278,
+            252
+          ]
+        },
+        {
+          "region": [
+            649,
+            757,
+            186,
+            124
+          ],
+          "anchor": [
+            654,
+            826.0
+          ],
+          "offset": [
+            88.0,
+            -7.0
+          ],
+          "alpha_bounds_in_cell": [
+            30,
+            121,
+            210,
+            239
+          ]
+        },
+        {
+          "region": [
+            984,
+            770,
+            154,
+            107
+          ],
+          "anchor": [
+            990,
+            826.5
+          ],
+          "offset": [
+            71.0,
+            -3.0
+          ],
+          "alpha_bounds_in_cell": [
+            51,
+            134,
+            199,
+            235
+          ]
+        }
+      ],
+      "anchor_policy": "flame emitter root"
+    },
+    "burn": {
+      "label": "目标烧伤",
+      "row": 3,
+      "frame_count": 4,
+      "fps": 10,
+      "loop": true,
+      "recommended_display_width": 40,
+      "display_scale": 0.25,
+      "frames": [
+        {
+          "region": [
+            100,
+            978,
+            161,
+            233
+          ],
+          "anchor": [
+            180.5,
+            1094.5
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "alpha_bounds_in_cell": [
+            103,
+            41,
+            258,
+            268
+          ]
+        },
+        {
+          "region": [
+            406,
+            982,
+            166,
+            230
+          ],
+          "anchor": [
+            489.0,
+            1097.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "alpha_bounds_in_cell": [
+            91,
+            45,
+            251,
+            269
+          ]
+        },
+        {
+          "region": [
+            693,
+            973,
+            162,
+            238
+          ],
+          "anchor": [
+            774.0,
+            1092.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "alpha_bounds_in_cell": [
+            74,
+            36,
+            230,
+            268
+          ]
+        },
+        {
+          "region": [
+            1011,
+            1009,
+            146,
+            195
+          ],
+          "anchor": [
+            1083.5,
+            1106.5
+          ],
+          "offset": [
+            0.5,
+            0.0
+          ],
+          "alpha_bounds_in_cell": [
+            78,
+            72,
+            218,
+            261
+          ]
+        }
+      ],
+      "anchor_policy": "visible silhouette center"
+    }
+  },
+  "note": "Native generated high-resolution pixel-style art. Display size is configurable; not a native 32x32 sprite sheet. Collision and damage are game logic, not alpha bounds."
+}

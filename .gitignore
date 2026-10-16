@@ -1,0 +1,31 @@
+.env
+
+# Regenerable working data and Godot imports.
+work/
+**/.godot/
+**/__pycache__/
+*.pyc
+godot-demo/outputs/
+tools/godot/editor_data/
+tools/godot/*.exe
+tools/godot/templates/
+
+# 本地设计原稿、归档、引擎环境
+/design/
+/archive/
+/tools/
+/.agents/
+/.codex/
+
+# 测试截图和日志，报告文字可以保留
+/reports
+
+# 临时文件和本地凭据
+*.tmp
+*.bak
+.env.*
+!.env.example
+
+/automation
+
+/docs

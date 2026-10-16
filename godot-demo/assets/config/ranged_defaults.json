@@ -1,0 +1,91 @@
+{
+  "status": "主游戏 ID 顺序。GPT 接触火焰扣 1 颗血、持续接触按间隔重复扣血已确定；Claude 三次弹射、酒狐单弹碰墙分三颗已确定。伤害间隔 0.75 秒等未确定数值仍为默认假设；烧伤火苗不额外扣血。",
+  "spawn_distance": 30.0,
+  "wall_epsilon": 1.5,
+  "max_primary_per_owner": 6,
+  "max_transient_effects": 128,
+  "weapons": [
+    {
+      "role": "GPT娘",
+      "kind": "flame",
+      "damage": 1,
+      "cooldown": 0.55,
+      "range": 210.0,
+      "half_angle_degrees": 34.0,
+      "pulse_seconds": 0.75,
+      "burn_damage": 0,
+      "burn_seconds": 2.4,
+      "burn_tick_seconds": 0.8,
+      "blocked_by_walls": true
+    },
+    {
+      "role": "Claude娘",
+      "kind": "ricochet",
+      "damage": 1,
+      "cooldown": 0.65,
+      "speed": 440.0,
+      "range": 4000.0,
+      "lifetime": 10.0,
+      "radius": 6.0,
+      "bounces": 3,
+      "bounce_walls": true,
+      "bounce_enemies": false
+    },
+    {
+      "role": "DeepSeek娘",
+      "kind": "knife",
+      "damage": 1,
+      "cooldown": 0.5,
+      "speed": 570.0,
+      "return_speed": 640.0,
+      "return_after": 0.56,
+      "range": 850.0,
+      "lifetime": 3.0,
+      "radius": 6.0,
+      "catch_radius": 22.0
+    },
+    {
+      "role": "Eve_aic",
+      "kind": "sniper",
+      "damage": 1,
+      "cooldown": 0.85,
+      "speed": 1400.0,
+      "range": 1500.0,
+      "lifetime": 2.0,
+      "radius": 3.0,
+      "pierce_enemies": false
+    },
+    {
+      "role": "GLM娘",
+      "kind": "poison",
+      "damage": 1,
+      "cooldown": 0.9,
+      "speed": 380.0,
+      "range": 950.0,
+      "lifetime": 3.0,
+      "radius": 7.0,
+      "pool_radius": 62.0,
+      "pool_seconds": 4.0,
+      "pool_damage": 1,
+      "pool_tick_seconds": 0.8,
+      "pool_on_enemy": false
+    },
+    {
+      "role": "酒狐",
+      "kind": "split",
+      "damage": 1,
+      "cooldown": 0.65,
+      "speed": 460.0,
+      "range": 1100.0,
+      "lifetime": 3.0,
+      "radius": 5.0,
+      "child_speed": 400.0,
+      "child_lifetime": 1.8,
+      "child_range": 720.0,
+      "child_damage": 1,
+      "split_degrees": 24.0,
+      "children_split": false,
+      "max_split_depth": 1
+    }
+  ]
+}
