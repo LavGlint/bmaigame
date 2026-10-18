@@ -5,21 +5,8 @@
 - [试玩新版 Demo](试玩新版Demo.cmd)：运行已导出的 Windows 游戏。。
 - [查看 UI 组件库](查看UI组件库.cmd)：预览游戏内交互组件。
 
-## 文件夹用途
-
-| 文件夹 | 放什么 | 常用入口 |
-| --- | --- | --- |
-| `godot-demo/` | 正式游戏工程、场景、脚本与运行素材 | [project.godot](godot-demo/project.godot) |
-| `design/` | 原始设计与角色素材，按 UI、图标、字体、角色、页面分类 | [设计导航](design/README.md) |
-| `automation/` | 正在使用的素材生成、截图及打包工具 | [脚本说明](automation/README.md) |
-| `tools/` | Godot 引擎、Windows 导出模板、补充字体及来源资料 | [工具说明](tools/README.md) |
-| `reports/` | 最新测试证据、整理与清理记录 | [最新测试报告](reports/qa/v0.17.0/验证报告.md) |
-| `docs/` | 目录维护规范、开发环境及更新历史 | [目录规范](docs/目录规范.md) |
-| `archive/` | 旧代码快照、旧生成脚本和历史测试记录 | [归档说明](archive/README.md) |
 
 最新可交付文件集中在 [godot-demo/outputs/](godot-demo/outputs/)：`windows/` 是可直接运行的 exe + pck；两个 ZIP 分别为试玩包和工程包。保持 exe 与 pck 同目录。
-
-第一版正式包：[Windows v1.0.0](godot-demo/outputs/回旋镖大乱斗-v1.0.0-Windows.zip) · [Godot 工程 v1.0.0](godot-demo/outputs/回旋镖大乱斗-v1.0.0-Godot工程.zip)。[操作说明](godot-demo/outputs/windows/操作说明.md) · [发布验证与整理](reports/releases/v1.0.0/发布报告.md)。
 
 游戏运行素材放在 `godot-demo/assets/`，原始设计素材放在 `design/`。修改玩法去 `godot-demo/scripts/`，修改页面布局去 `scripts/screens.gd`，修改设置交互去 `scripts/main.gd`。
 
