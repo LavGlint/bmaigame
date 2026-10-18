@@ -2,7 +2,7 @@
 
 当前正式版：v1.0.0。三张固定地图、六角色远程攻击、完整人物动画、P1 至 P4 顺序选人、低饱和菜单插画与完整地图等比显示已接入。Windows 正式包仅包含运行文件、操作说明及许可证；测试源码移至 automation/regression，历史产物可恢复归档在 archive/release-v1.0.0。日常只需打开下列入口：
 
-- [试玩新版 Demo](试玩新版Demo.cmd)：运行已导出的 Windows 游戏。。
+- [试玩新版 Demo](godot-demo/启动Godot试玩.cmd)：运行已导出的 Windows 游戏。。
 - [查看 UI 组件库](查看UI组件库.cmd)：预览游戏内交互组件。
 
 
