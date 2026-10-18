@@ -5,9 +5,6 @@
 - [试玩新版 Demo](godot-demo/启动Godot试玩.cmd)：运行已导出的 Windows 游戏。。
 - [查看 UI 组件库](查看UI组件库.cmd)：预览游戏内交互组件。
 
-
-最新可交付文件集中在 [godot-demo/outputs/](godot-demo/outputs/)：`windows/` 是可直接运行的 exe + pck；两个 ZIP 分别为试玩包和工程包。保持 exe 与 pck 同目录。
-
 游戏运行素材放在 `godot-demo/assets/`，原始设计素材放在 `design/`。修改玩法去 `godot-demo/scripts/`，修改页面布局去 `scripts/screens.gd`，修改设置交互去 `scripts/main.gd`。
 
 ## 开发命令
